@@ -1,0 +1,13 @@
+2025-09-30 16:16:05.892 [info] 
+
+
+
+
+2025-09-30 16:16:05.905 [info] Extension host agent started.
+2025-09-30 16:16:06.119 [error] [127.0.0.1][f35fffd6][ManagementConnection] Unknown reconnection token (never seen).
+2025-09-30 16:16:06.184 [error] [127.0.0.1][f4d78f12][ExtensionHostConnection] Unknown reconnection token (never seen).
+2025-09-30 16:16:13.968 [info] [127.0.0.1][19cbcc18][ManagementConnection] New connection established.
+2025-09-30 16:16:14.004 [info] Getting extensions control
+2025-09-30 16:16:14.021 [info] [127.0.0.1][31401513][ExtensionHostConnection] New connection established.
+2025-09-30 16:16:14.076 [info] [127.0.0.1][31401513][ExtensionHostConnection] <8565> Launched Extension Host Process.
+2025-09-30 16:21:05.909 [info] New EH opened, aborting shutdown

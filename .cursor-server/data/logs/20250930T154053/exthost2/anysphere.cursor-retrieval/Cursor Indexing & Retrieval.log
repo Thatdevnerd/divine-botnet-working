@@ -1,0 +1,30 @@
+2025-09-30 15:41:10.522 [error] Error getting repo info: Failed to execute git
+2025-09-30 15:41:10.522 [error] Error: Failed to execute git
+	at t.Git._exec (/root/.cursor-server/bin/34881053400013f38e2354f1479c88c9067039a0/extensions/git/dist/main.js:2:34408)
+	at async t.Git.exec (/root/.cursor-server/bin/34881053400013f38e2354f1479c88c9067039a0/extensions/git/dist/main.js:2:33531)
+	at async t.GitProvider.executeGitCommandStable (/root/.cursor-server/bin/34881053400013f38e2354f1479c88c9067039a0/extensions/cursor-retrieval/dist/main.js:2:1287404)
+	at async t.GitProvider.getRepoInfo (/root/.cursor-server/bin/34881053400013f38e2354f1479c88c9067039a0/extensions/cursor-retrieval/dist/main.js:2:1263356)
+2025-09-30 15:41:10.522 [info] Creating Indexing Repo client:  https://repo42.cursor.sh
+2025-09-30 15:41:10.522 [info] Creating repo client with backend url: https://repo42.cursor.sh
+2025-09-30 15:41:10.718 [info] Making keys for a new index
+2025-09-30 15:41:12.194 [warning] Failed to get symbolic ref: Failed to execute git
+2025-09-30 15:41:12.615 [warning] Failed to get default branch from git config: Failed to execute git
+2025-09-30 15:41:12.798 [info] Using the default key from the server for a new index
+2025-09-30 15:41:12.799 [info] InternalRepoInfo constructor with preferredEmbeddingModel 0
+2025-09-30 15:41:12.859 [info] Using existing keys for an index
+2025-09-30 15:41:12.859 [info] InternalRepoInfo constructor with preferredEmbeddingModel 0
+2025-09-30 15:41:12.865 [info] Using existing keys for an index
+2025-09-30 15:41:12.865 [info] InternalRepoInfo constructor with preferredEmbeddingModel 0
+2025-09-30 15:41:12.869 [error] We currently do not allow indexing the home directory.
+2025-09-30 15:41:12.869 [info] Indexing job successfully done or aborted.
+2025-09-30 15:44:42.956 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 15:44:53.441 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 15:45:35.923 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 15:46:07.934 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 15:46:25.874 [info] multiCodebaseIndexingJob dispose
+2025-09-30 15:46:25.875 [info] Aborting indexing job.
+2025-09-30 15:46:25.875 [error] We currently do not allow indexing the home directory.
+2025-09-30 15:46:25.875 [info] Indexing job successfully done or aborted.
+2025-09-30 15:50:51.270 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 15:50:57.383 [error] Error getting user commits: Failed to execute git
+2025-09-30 15:51:22.696 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')

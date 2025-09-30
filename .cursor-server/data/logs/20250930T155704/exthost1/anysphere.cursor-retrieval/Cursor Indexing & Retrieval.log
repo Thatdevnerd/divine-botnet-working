@@ -1,0 +1,11 @@
+2025-09-30 15:57:10.214 [error] Error getting repo info: Failed to execute git
+2025-09-30 15:57:10.214 [error] Error: Failed to execute git
+	at t.Git._exec (/root/.cursor-server/bin/34881053400013f38e2354f1479c88c9067039a0/extensions/git/dist/main.js:2:34408)
+	at async t.Git.exec (/root/.cursor-server/bin/34881053400013f38e2354f1479c88c9067039a0/extensions/git/dist/main.js:2:33531)
+	at async t.GitProvider.executeGitCommandStable (/root/.cursor-server/bin/34881053400013f38e2354f1479c88c9067039a0/extensions/cursor-retrieval/dist/main.js:2:1287404)
+	at async t.GitProvider.getRepoInfo (/root/.cursor-server/bin/34881053400013f38e2354f1479c88c9067039a0/extensions/cursor-retrieval/dist/main.js:2:1263356)
+2025-09-30 15:57:10.214 [info] Creating Indexing Repo client:  https://repo42.cursor.sh
+2025-09-30 15:57:10.214 [info] Creating repo client with backend url: https://repo42.cursor.sh
+2025-09-30 15:57:10.414 [error] NoWorkspaceUriError
+2025-09-30 15:57:10.580 [warning] Failed to get symbolic ref: Failed to execute git
+2025-09-30 15:57:10.626 [warning] Failed to get default branch from git config: Failed to execute git

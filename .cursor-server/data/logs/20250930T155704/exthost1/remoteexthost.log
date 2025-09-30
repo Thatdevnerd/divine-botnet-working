@@ -1,0 +1,16 @@
+2025-09-30 15:57:08.003 [info] Extension host with pid 1716 started
+2025-09-30 15:57:08.079 [info] ExtensionService#_doActivateExtension cursor.cursor-browser-automation, startup: false, activationEvent: 'onCommand:cursor.browserAutomation.stop'
+2025-09-30 15:57:08.080 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2025-09-30 15:57:08.081 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-09-30 15:57:08.295 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2025-09-30 15:57:08.295 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2025-09-30 15:57:08.550 [info] Eager extensions activated
+2025-09-30 15:57:08.550 [info] ExtensionService#_doActivateExtension anysphere.cursor-browser-connect, startup: false, activationEvent: 'onStartupFinished'
+2025-09-30 15:57:08.551 [info] ExtensionService#_doActivateExtension anysphere.cursor-mcp, startup: false, activationEvent: 'onStartupFinished'
+2025-09-30 15:57:08.551 [info] ExtensionService#_doActivateExtension anysphere.cursor-playwright, startup: false, activationEvent: 'onStartupFinished'
+2025-09-30 15:57:08.552 [info] ExtensionService#_doActivateExtension anysphere.cursor-retrieval, startup: false, activationEvent: 'onStartupFinished'
+2025-09-30 15:57:08.552 [info] ExtensionService#_doActivateExtension anysphere.cursor-shadow-workspace, startup: false, activationEvent: 'onStartupFinished'
+2025-09-30 15:57:08.552 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-09-30 15:57:08.553 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-09-30 15:57:14.423 [info] Extension host terminating: received terminate message from renderer
+2025-09-30 15:57:14.443 [info] Extension host with pid 1716 exiting with code 0

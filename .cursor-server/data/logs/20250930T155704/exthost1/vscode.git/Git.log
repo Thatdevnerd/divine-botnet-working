@@ -1,0 +1,22 @@
+2025-09-30 15:57:10.018 [info] [main] Log level: Info
+2025-09-30 15:57:10.018 [info] [main] Validating found git in: "git"
+2025-09-30 15:57:10.018 [info] [main] Using git "1.8.3.1" from "git"
+2025-09-30 15:57:10.018 [info] [Model][doInitialScan] Initial repository scan started
+2025-09-30 15:57:10.018 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-09-30 15:57:10.133 [info] > git config --get remote.origin.url [71ms]
+2025-09-30 15:57:10.580 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [11ms]
+2025-09-30 15:57:10.580 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2025-09-30 15:57:10.582 [info] > git rev-parse --abbrev-ref HEAD [4ms]
+2025-09-30 15:57:10.582 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 15:57:10.589 [info] > git rev-parse --verify origin/master [1ms]
+2025-09-30 15:57:10.589 [info] fatal: Needed a single revision
+2025-09-30 15:57:10.596 [info] > git rev-parse --verify origin/main [1ms]
+2025-09-30 15:57:10.596 [info] fatal: Needed a single revision
+2025-09-30 15:57:10.603 [info] > git rev-parse --verify origin/master [1ms]
+2025-09-30 15:57:10.603 [info] fatal: Needed a single revision
+2025-09-30 15:57:10.611 [info] > git rev-parse --verify origin/develop [1ms]
+2025-09-30 15:57:10.611 [info] fatal: Needed a single revision
+2025-09-30 15:57:10.619 [info] > git branch -r [1ms]
+2025-09-30 15:57:10.626 [info] > git config --get init.defaultBranch [1ms]

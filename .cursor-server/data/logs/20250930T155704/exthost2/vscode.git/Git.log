@@ -1,0 +1,987 @@
+2025-09-30 15:57:25.029 [info] [main] Log level: Info
+2025-09-30 15:57:25.029 [info] [main] Validating found git in: "git"
+2025-09-30 15:57:25.029 [info] [main] Using git "1.8.3.1" from "git"
+2025-09-30 15:57:25.029 [info] [Model][doInitialScan] Initial repository scan started
+2025-09-30 15:57:25.029 [info] > git rev-parse --show-toplevel [1300ms]
+2025-09-30 15:57:25.029 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2025-09-30 15:57:25.029 [info] [Model][openRepository] Opened repository: /root
+2025-09-30 15:57:25.029 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-09-30 15:57:25.029 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:57:25.029 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:57:25.029 [info] > git config --get commit.template [1ms]
+2025-09-30 15:57:25.029 [info] > git remote --verbose [9ms]
+2025-09-30 15:57:25.029 [info] > git remote --verbose [14ms]
+2025-09-30 15:57:25.029 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [4ms]
+2025-09-30 15:57:25.029 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:57:25.029 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-09-30 15:57:25.167 [info] > git config --get remote.origin.url [62ms]
+2025-09-30 15:57:25.198 [info] > git status -z -uall [179ms]
+2025-09-30 15:57:27.027 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:57:27.036 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1526ms]
+2025-09-30 15:57:27.036 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:57:27.037 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for master: Error: No such branch: master.
+2025-09-30 15:57:27.057 [info] > git config --get commit.template [21ms]
+2025-09-30 15:57:27.057 [info] > git remote --verbose [30ms]
+2025-09-30 15:57:27.070 [info] > git check-ignore -v -z --stdin [18ms]
+2025-09-30 15:57:27.072 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [3ms]
+2025-09-30 15:57:27.072 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:57:27.081 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:57:27.201 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-30 15:57:27.217 [info] > git status -z -uall [142ms]
+2025-09-30 15:57:27.217 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [8ms]
+2025-09-30 15:57:27.217 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2025-09-30 15:57:28.742 [info] > git rev-parse --abbrev-ref HEAD [1527ms]
+2025-09-30 15:57:28.742 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 15:57:28.820 [info] > git rev-parse --verify origin/master [2ms]
+2025-09-30 15:57:28.821 [info] fatal: Needed a single revision
+2025-09-30 15:57:28.843 [info] > git rev-parse --verify origin/main [3ms]
+2025-09-30 15:57:28.843 [info] fatal: Needed a single revision
+2025-09-30 15:57:29.078 [info] > git rev-parse --verify origin/master [227ms]
+2025-09-30 15:57:29.078 [info] fatal: Needed a single revision
+2025-09-30 15:57:29.085 [info] > git rev-parse --verify origin/develop [2ms]
+2025-09-30 15:57:29.085 [info] fatal: Needed a single revision
+2025-09-30 15:57:29.102 [info] > git branch -r [7ms]
+2025-09-30 15:57:29.110 [info] > git config --get init.defaultBranch [2ms]
+2025-09-30 15:57:29.133 [info] > git diff --no-color [13ms]
+2025-09-30 15:57:29.140 [info] > git rev-parse --abbrev-ref HEAD [1ms]
+2025-09-30 15:57:29.140 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 15:57:29.266 [info] > git ls-files --others --exclude-standard [135ms]
+2025-09-30 15:57:32.840 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:57:32.847 [info] > git config --get commit.template [1ms]
+2025-09-30 15:57:32.847 [info] > git remote --verbose [7ms]
+2025-09-30 15:57:32.856 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [2ms]
+2025-09-30 15:57:32.856 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:57:32.870 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 15:57:32.968 [info] > git status -z -uall [106ms]
+2025-09-30 15:57:34.439 [info] > git config --global user.name [5ms]
+2025-09-30 15:57:34.446 [info] > git config --global user.email [1ms]
+2025-09-30 15:57:34.446 [info] [main] Stored git author name in global state:  <>
+2025-09-30 15:57:34.507 [info] > git diff --no-color [28ms]
+2025-09-30 15:57:34.508 [info] > git rev-parse --abbrev-ref HEAD [2ms]
+2025-09-30 15:57:34.508 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 15:57:34.596 [info] > git ls-files --others --exclude-standard [103ms]
+2025-09-30 15:57:34.976 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-30 15:57:38.533 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:57:38.541 [info] > git config --get commit.template [2ms]
+2025-09-30 15:57:38.541 [info] > git remote --verbose [9ms]
+2025-09-30 15:57:38.548 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 15:57:38.549 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:57:38.568 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:57:38.654 [info] > git status -z -uall [96ms]
+2025-09-30 15:57:43.809 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:57:43.817 [info] > git config --get commit.template [1ms]
+2025-09-30 15:57:43.817 [info] > git remote --verbose [8ms]
+2025-09-30 15:57:43.825 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 15:57:43.825 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:57:43.846 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:57:43.977 [info] > git status -z -uall [142ms]
+2025-09-30 15:57:49.182 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:57:49.193 [info] > git config --get commit.template [1ms]
+2025-09-30 15:57:49.193 [info] > git remote --verbose [12ms]
+2025-09-30 15:57:49.202 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 15:57:49.202 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:57:49.238 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:57:49.381 [info] > git status -z -uall [164ms]
+2025-09-30 15:57:51.253 [info] > git diff --no-color [12ms]
+2025-09-30 15:57:51.282 [info] > git rev-parse --abbrev-ref HEAD [1ms]
+2025-09-30 15:57:51.283 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 15:57:51.397 [info] > git ls-files --others --exclude-standard [146ms]
+2025-09-30 15:57:51.730 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-30 15:57:54.605 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:57:54.613 [info] > git config --get commit.template [0ms]
+2025-09-30 15:57:54.613 [info] > git remote --verbose [9ms]
+2025-09-30 15:57:54.621 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 15:57:54.621 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:57:54.675 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:57:54.762 [info] > git status -z -uall [120ms]
+2025-09-30 15:57:56.394 [info] > git diff --no-color [19ms]
+2025-09-30 15:57:56.422 [info] > git rev-parse --abbrev-ref HEAD [1ms]
+2025-09-30 15:57:56.422 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 15:57:56.503 [info] > git ls-files --others --exclude-standard [110ms]
+2025-09-30 15:57:56.868 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-30 15:57:59.925 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:57:59.933 [info] > git config --get commit.template [1ms]
+2025-09-30 15:57:59.934 [info] > git remote --verbose [9ms]
+2025-09-30 15:57:59.942 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 15:57:59.943 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:57:59.987 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:58:00.112 [info] > git status -z -uall [156ms]
+2025-09-30 15:58:02.449 [info] > git diff --no-color [207ms]
+2025-09-30 15:58:02.451 [info] > git rev-parse --abbrev-ref HEAD [2ms]
+2025-09-30 15:58:02.451 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 15:58:02.480 [info] > git ls-files --others --exclude-standard [222ms]
+2025-09-30 15:58:02.569 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-30 15:58:05.314 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:58:05.321 [info] > git config --get commit.template [1ms]
+2025-09-30 15:58:05.322 [info] > git remote --verbose [8ms]
+2025-09-30 15:58:05.330 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 15:58:05.330 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:58:05.355 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:58:05.458 [info] > git status -z -uall [113ms]
+2025-09-30 15:58:07.025 [info] > git diff --no-color [16ms]
+2025-09-30 15:58:07.059 [info] > git rev-parse --abbrev-ref HEAD [1ms]
+2025-09-30 15:58:07.059 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 15:58:07.166 [info] > git ls-files --others --exclude-standard [141ms]
+2025-09-30 15:58:07.520 [info] > git rev-parse --show-toplevel [0ms]
+2025-09-30 15:58:10.636 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:58:10.723 [info] > git config --get commit.template [18ms]
+2025-09-30 15:58:10.723 [info] > git remote --verbose [87ms]
+2025-09-30 15:58:10.733 [info] > git check-ignore -v -z --stdin [13ms]
+2025-09-30 15:58:10.735 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [3ms]
+2025-09-30 15:58:10.735 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:58:10.778 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-09-30 15:58:10.889 [info] > git status -z -uall [139ms]
+2025-09-30 15:58:12.696 [info] > git diff --no-color [29ms]
+2025-09-30 15:58:12.714 [info] > git rev-parse --abbrev-ref HEAD [2ms]
+2025-09-30 15:58:12.714 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 15:58:13.159 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-30 15:58:13.166 [info] > git ls-files --others --exclude-standard [471ms]
+2025-09-30 15:58:16.172 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:58:16.189 [info] > git config --get commit.template [4ms]
+2025-09-30 15:58:16.189 [info] > git remote --verbose [18ms]
+2025-09-30 15:58:16.202 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 15:58:16.202 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:58:16.249 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:58:16.377 [info] > git status -z -uall [156ms]
+2025-09-30 15:58:18.094 [info] > git diff --no-color [12ms]
+2025-09-30 15:58:18.109 [info] > git rev-parse --abbrev-ref HEAD [1ms]
+2025-09-30 15:58:18.109 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 15:58:18.217 [info] > git ls-files --others --exclude-standard [124ms]
+2025-09-30 15:58:18.577 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-30 15:58:21.587 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:58:21.597 [info] > git config --get commit.template [1ms]
+2025-09-30 15:58:21.597 [info] > git remote --verbose [10ms]
+2025-09-30 15:58:21.606 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 15:58:21.606 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:58:21.637 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:58:21.774 [info] > git status -z -uall [154ms]
+2025-09-30 15:58:23.469 [info] > git diff --no-color [11ms]
+2025-09-30 15:58:23.476 [info] > git rev-parse --abbrev-ref HEAD [1ms]
+2025-09-30 15:58:23.476 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 15:58:23.574 [info] > git ls-files --others --exclude-standard [106ms]
+2025-09-30 15:58:23.975 [info] > git rev-parse --show-toplevel [2ms]
+2025-09-30 15:58:26.941 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:58:26.949 [info] > git config --get commit.template [1ms]
+2025-09-30 15:58:26.949 [info] > git remote --verbose [8ms]
+2025-09-30 15:58:26.966 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [2ms]
+2025-09-30 15:58:26.967 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:58:27.010 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:58:27.084 [info] > git status -z -uall [103ms]
+2025-09-30 15:58:29.366 [info] > git check-ignore -v -z --stdin [2ms]
+2025-09-30 15:58:32.250 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:58:32.257 [info] > git config --get commit.template [1ms]
+2025-09-30 15:58:32.257 [info] > git remote --verbose [8ms]
+2025-09-30 15:58:32.266 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 15:58:32.266 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:58:32.289 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:58:32.389 [info] > git status -z -uall [113ms]
+2025-09-30 15:58:37.530 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:58:37.539 [info] > git config --get commit.template [1ms]
+2025-09-30 15:58:37.539 [info] > git remote --verbose [9ms]
+2025-09-30 15:58:37.548 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 15:58:37.548 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:58:37.578 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:58:37.682 [info] > git status -z -uall [113ms]
+2025-09-30 15:58:42.873 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:58:42.880 [info] > git config --get commit.template [1ms]
+2025-09-30 15:58:42.880 [info] > git remote --verbose [7ms]
+2025-09-30 15:58:42.887 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 15:58:42.887 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:58:42.902 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:58:43.011 [info] > git status -z -uall [118ms]
+2025-09-30 15:58:48.177 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:58:48.186 [info] > git config --get commit.template [1ms]
+2025-09-30 15:58:48.186 [info] > git remote --verbose [9ms]
+2025-09-30 15:58:48.195 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 15:58:48.195 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:58:48.210 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-09-30 15:58:48.310 [info] > git status -z -uall [109ms]
+2025-09-30 15:58:52.541 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [1ms]
+2025-09-30 15:58:52.541 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2025-09-30 15:58:52.550 [info] > git rev-parse --verify origin/master [1ms]
+2025-09-30 15:58:52.550 [info] fatal: Needed a single revision
+2025-09-30 15:58:52.605 [info] > git rev-parse --verify origin/main [47ms]
+2025-09-30 15:58:52.605 [info] fatal: Needed a single revision
+2025-09-30 15:58:52.612 [info] > git rev-parse --verify origin/master [1ms]
+2025-09-30 15:58:52.612 [info] fatal: Needed a single revision
+2025-09-30 15:58:52.618 [info] > git rev-parse --verify origin/develop [1ms]
+2025-09-30 15:58:52.618 [info] fatal: Needed a single revision
+2025-09-30 15:58:52.647 [info] > git branch -r [24ms]
+2025-09-30 15:58:52.655 [info] > git config --get init.defaultBranch [1ms]
+2025-09-30 15:58:53.459 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:58:53.468 [info] > git remote --verbose [10ms]
+2025-09-30 15:58:53.468 [info] > git config --get commit.template [1ms]
+2025-09-30 15:58:53.475 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 15:58:53.476 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:58:53.498 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:58:53.585 [info] > git status -z -uall [102ms]
+2025-09-30 15:58:58.758 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:58:58.767 [info] > git remote --verbose [9ms]
+2025-09-30 15:58:58.768 [info] > git config --get commit.template [2ms]
+2025-09-30 15:58:58.777 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 15:58:58.777 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:58:58.795 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-09-30 15:58:58.898 [info] > git status -z -uall [116ms]
+2025-09-30 15:59:04.050 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:59:04.061 [info] > git remote --verbose [11ms]
+2025-09-30 15:59:04.062 [info] > git config --get commit.template [2ms]
+2025-09-30 15:59:04.073 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 15:59:04.073 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:59:04.096 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 15:59:04.216 [info] > git status -z -uall [133ms]
+2025-09-30 15:59:09.395 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:59:09.405 [info] > git config --get commit.template [0ms]
+2025-09-30 15:59:09.405 [info] > git remote --verbose [10ms]
+2025-09-30 15:59:09.412 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 15:59:09.413 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:59:09.426 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:59:09.628 [info] > git status -z -uall [210ms]
+2025-09-30 15:59:14.902 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:59:14.910 [info] > git config --get commit.template [1ms]
+2025-09-30 15:59:14.911 [info] > git remote --verbose [9ms]
+2025-09-30 15:59:14.918 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 15:59:14.919 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:59:14.935 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:59:15.046 [info] > git status -z -uall [121ms]
+2025-09-30 15:59:20.218 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:59:20.226 [info] > git config --get commit.template [1ms]
+2025-09-30 15:59:20.226 [info] > git remote --verbose [9ms]
+2025-09-30 15:59:20.234 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 15:59:20.235 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:59:20.252 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:59:20.357 [info] > git status -z -uall [116ms]
+2025-09-30 15:59:21.930 [info] > git diff --no-color [9ms]
+2025-09-30 15:59:21.939 [info] > git rev-parse --abbrev-ref HEAD [1ms]
+2025-09-30 15:59:21.939 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 15:59:22.065 [info] > git ls-files --others --exclude-standard [134ms]
+2025-09-30 15:59:22.402 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-30 15:59:25.518 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:59:25.533 [info] > git config --get commit.template [5ms]
+2025-09-30 15:59:25.534 [info] > git remote --verbose [16ms]
+2025-09-30 15:59:25.613 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 15:59:25.614 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:59:25.682 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:59:25.801 [info] > git status -z -uall [173ms]
+2025-09-30 15:59:30.948 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:59:30.956 [info] > git config --get commit.template [1ms]
+2025-09-30 15:59:30.957 [info] > git remote --verbose [9ms]
+2025-09-30 15:59:30.966 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 15:59:30.967 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:59:30.987 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 15:59:31.102 [info] > git status -z -uall [123ms]
+2025-09-30 15:59:36.272 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:59:36.279 [info] > git config --get commit.template [1ms]
+2025-09-30 15:59:36.279 [info] > git remote --verbose [7ms]
+2025-09-30 15:59:36.286 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 15:59:36.286 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:59:36.311 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:59:36.397 [info] > git status -z -uall [104ms]
+2025-09-30 15:59:38.043 [info] > git diff --no-color [9ms]
+2025-09-30 15:59:38.051 [info] > git rev-parse --abbrev-ref HEAD [1ms]
+2025-09-30 15:59:38.051 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 15:59:38.145 [info] > git ls-files --others --exclude-standard [104ms]
+2025-09-30 15:59:38.427 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-30 15:59:41.567 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:59:41.575 [info] > git config --get commit.template [1ms]
+2025-09-30 15:59:41.575 [info] > git remote --verbose [8ms]
+2025-09-30 15:59:41.583 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 15:59:41.583 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:59:41.600 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:59:41.695 [info] > git status -z -uall [105ms]
+2025-09-30 15:59:46.847 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:59:46.857 [info] > git config --get commit.template [3ms]
+2025-09-30 15:59:46.857 [info] > git remote --verbose [10ms]
+2025-09-30 15:59:46.866 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 15:59:46.866 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:59:46.880 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:59:46.986 [info] > git status -z -uall [114ms]
+2025-09-30 15:59:52.153 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:59:52.162 [info] > git remote --verbose [10ms]
+2025-09-30 15:59:52.164 [info] > git config --get commit.template [3ms]
+2025-09-30 15:59:52.177 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [4ms]
+2025-09-30 15:59:52.177 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:59:52.197 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:59:52.330 [info] > git status -z -uall [146ms]
+2025-09-30 15:59:57.499 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 15:59:57.506 [info] > git config --get commit.template [1ms]
+2025-09-30 15:59:57.506 [info] > git remote --verbose [8ms]
+2025-09-30 15:59:57.513 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 15:59:57.513 [warning] [Git][getBranch] No such branch: master
+2025-09-30 15:59:57.528 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 15:59:57.685 [info] > git status -z -uall [165ms]
+2025-09-30 16:00:02.884 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:00:02.897 [info] > git remote --verbose [13ms]
+2025-09-30 16:00:02.908 [info] > git config --get commit.template [13ms]
+2025-09-30 16:00:02.908 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:00:02.908 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:00:02.930 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:00:03.152 [info] > git status -z -uall [237ms]
+2025-09-30 16:00:08.432 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:00:08.442 [info] > git config --get commit.template [1ms]
+2025-09-30 16:00:08.442 [info] > git remote --verbose [10ms]
+2025-09-30 16:00:08.453 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [2ms]
+2025-09-30 16:00:08.454 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:00:08.473 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:00:08.588 [info] > git status -z -uall [124ms]
+2025-09-30 16:00:13.753 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:00:13.761 [info] > git config --get commit.template [1ms]
+2025-09-30 16:00:13.761 [info] > git remote --verbose [8ms]
+2025-09-30 16:00:13.768 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:00:13.768 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:00:13.795 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:00:13.884 [info] > git status -z -uall [103ms]
+2025-09-30 16:00:19.048 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:00:19.055 [info] > git remote --verbose [7ms]
+2025-09-30 16:00:19.056 [info] > git config --get commit.template [2ms]
+2025-09-30 16:00:19.065 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [3ms]
+2025-09-30 16:00:19.066 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:00:19.081 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:00:19.191 [info] > git status -z -uall [118ms]
+2025-09-30 16:00:24.344 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:00:24.355 [info] > git remote --verbose [12ms]
+2025-09-30 16:00:24.355 [info] > git config --get commit.template [1ms]
+2025-09-30 16:00:24.364 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:00:24.365 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:00:24.380 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:00:24.495 [info] > git status -z -uall [123ms]
+2025-09-30 16:00:29.682 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:00:29.690 [info] > git config --get commit.template [0ms]
+2025-09-30 16:00:29.690 [info] > git remote --verbose [8ms]
+2025-09-30 16:00:29.697 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 16:00:29.697 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:00:29.711 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:00:29.825 [info] > git status -z -uall [122ms]
+2025-09-30 16:00:34.976 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:00:34.984 [info] > git config --get commit.template [1ms]
+2025-09-30 16:00:34.984 [info] > git remote --verbose [8ms]
+2025-09-30 16:00:34.991 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:00:34.991 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:00:35.006 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:00:35.112 [info] > git status -z -uall [115ms]
+2025-09-30 16:00:40.316 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:00:40.326 [info] > git config --get commit.template [1ms]
+2025-09-30 16:00:40.326 [info] > git remote --verbose [10ms]
+2025-09-30 16:00:40.337 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:00:40.338 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:00:40.356 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:00:40.470 [info] > git status -z -uall [125ms]
+2025-09-30 16:00:45.624 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:00:45.630 [info] > git config --get commit.template [1ms]
+2025-09-30 16:00:45.630 [info] > git remote --verbose [7ms]
+2025-09-30 16:00:45.638 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:00:45.638 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:00:45.651 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:00:45.815 [info] > git status -z -uall [171ms]
+2025-09-30 16:00:51.087 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:00:51.095 [info] > git config --get commit.template [1ms]
+2025-09-30 16:00:51.095 [info] > git remote --verbose [8ms]
+2025-09-30 16:00:51.106 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:00:51.106 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:00:51.126 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:00:51.223 [info] > git status -z -uall [107ms]
+2025-09-30 16:00:56.396 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:00:56.404 [info] > git config --get commit.template [0ms]
+2025-09-30 16:00:56.404 [info] > git remote --verbose [8ms]
+2025-09-30 16:00:56.412 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 16:00:56.412 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:00:56.427 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:00:56.527 [info] > git status -z -uall [109ms]
+2025-09-30 16:01:01.698 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:01:01.706 [info] > git remote --verbose [9ms]
+2025-09-30 16:01:01.707 [info] > git config --get commit.template [2ms]
+2025-09-30 16:01:01.714 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:01:01.715 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:01:01.731 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:01:01.888 [info] > git status -z -uall [166ms]
+2025-09-30 16:01:07.201 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:01:07.210 [info] > git remote --verbose [10ms]
+2025-09-30 16:01:07.211 [info] > git config --get commit.template [2ms]
+2025-09-30 16:01:07.220 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [2ms]
+2025-09-30 16:01:07.220 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:01:07.238 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:01:07.366 [info] > git status -z -uall [138ms]
+2025-09-30 16:01:12.531 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:01:12.548 [info] > git config --get commit.template [1ms]
+2025-09-30 16:01:12.551 [info] > git remote --verbose [21ms]
+2025-09-30 16:01:12.564 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:01:12.564 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:01:12.586 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:01:12.730 [info] > git status -z -uall [156ms]
+2025-09-30 16:01:17.930 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:01:17.940 [info] > git config --get commit.template [1ms]
+2025-09-30 16:01:17.941 [info] > git remote --verbose [12ms]
+2025-09-30 16:01:17.948 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:01:17.948 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:01:17.965 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:01:18.108 [info] > git status -z -uall [151ms]
+2025-09-30 16:01:23.428 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:01:23.437 [info] > git remote --verbose [9ms]
+2025-09-30 16:01:23.437 [info] > git config --get commit.template [1ms]
+2025-09-30 16:01:23.445 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:01:23.445 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:01:23.463 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:01:23.564 [info] > git status -z -uall [111ms]
+2025-09-30 16:01:28.747 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:01:28.756 [info] > git config --get commit.template [1ms]
+2025-09-30 16:01:28.756 [info] > git remote --verbose [9ms]
+2025-09-30 16:01:28.765 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [2ms]
+2025-09-30 16:01:28.765 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:01:28.780 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:01:28.888 [info] > git status -z -uall [115ms]
+2025-09-30 16:01:34.041 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:01:34.047 [info] > git remote --verbose [6ms]
+2025-09-30 16:01:34.047 [info] > git config --get commit.template [1ms]
+2025-09-30 16:01:34.054 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:01:34.055 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:01:34.076 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:01:34.165 [info] > git status -z -uall [104ms]
+2025-09-30 16:01:39.300 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:01:39.308 [info] > git config --get commit.template [1ms]
+2025-09-30 16:01:39.309 [info] > git remote --verbose [9ms]
+2025-09-30 16:01:39.316 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 16:01:39.317 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:01:39.329 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:01:39.428 [info] > git status -z -uall [106ms]
+2025-09-30 16:01:44.579 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:01:44.587 [info] > git config --get commit.template [0ms]
+2025-09-30 16:01:44.587 [info] > git remote --verbose [9ms]
+2025-09-30 16:01:44.594 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:01:44.594 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:01:44.609 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:01:44.703 [info] > git status -z -uall [102ms]
+2025-09-30 16:01:49.850 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:01:49.858 [info] > git config --get commit.template [1ms]
+2025-09-30 16:01:49.858 [info] > git remote --verbose [8ms]
+2025-09-30 16:01:49.865 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 16:01:49.866 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:01:49.886 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:01:50.099 [info] > git status -z -uall [228ms]
+2025-09-30 16:01:55.274 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:01:55.281 [info] > git config --get commit.template [0ms]
+2025-09-30 16:01:55.282 [info] > git remote --verbose [8ms]
+2025-09-30 16:01:55.290 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:01:55.291 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:01:55.307 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:01:55.408 [info] > git status -z -uall [110ms]
+2025-09-30 16:02:00.547 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:02:00.556 [info] > git config --get commit.template [0ms]
+2025-09-30 16:02:00.556 [info] > git remote --verbose [10ms]
+2025-09-30 16:02:00.565 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:02:00.565 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:02:00.579 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:02:00.679 [info] > git status -z -uall [107ms]
+2025-09-30 16:02:05.822 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:02:05.829 [info] > git config --get commit.template [0ms]
+2025-09-30 16:02:05.830 [info] > git remote --verbose [8ms]
+2025-09-30 16:02:05.837 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:02:05.837 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:02:05.852 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:02:05.948 [info] > git status -z -uall [105ms]
+2025-09-30 16:02:11.146 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:02:11.153 [info] > git config --get commit.template [1ms]
+2025-09-30 16:02:11.153 [info] > git remote --verbose [8ms]
+2025-09-30 16:02:11.164 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [2ms]
+2025-09-30 16:02:11.164 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:02:11.183 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:02:11.284 [info] > git status -z -uall [112ms]
+2025-09-30 16:02:15.179 [info] > git rev-parse --show-toplevel [2ms]
+2025-09-30 16:02:16.466 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:02:16.475 [info] > git remote --verbose [9ms]
+2025-09-30 16:02:16.476 [info] > git config --get commit.template [1ms]
+2025-09-30 16:02:16.484 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 16:02:16.484 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:02:16.499 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:02:16.650 [info] > git status -z -uall [160ms]
+2025-09-30 16:02:21.866 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:02:21.873 [info] > git remote --verbose [7ms]
+2025-09-30 16:02:21.874 [info] > git config --get commit.template [1ms]
+2025-09-30 16:02:21.880 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 16:02:21.881 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:02:21.905 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:02:22.015 [info] > git status -z -uall [122ms]
+2025-09-30 16:02:27.181 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:02:27.189 [info] > git remote --verbose [8ms]
+2025-09-30 16:02:27.190 [info] > git config --get commit.template [1ms]
+2025-09-30 16:02:27.197 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:02:27.198 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:02:27.212 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:02:27.310 [info] > git status -z -uall [104ms]
+2025-09-30 16:02:32.473 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:02:32.481 [info] > git remote --verbose [8ms]
+2025-09-30 16:02:32.481 [info] > git config --get commit.template [1ms]
+2025-09-30 16:02:32.491 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:02:32.491 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:02:32.506 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:02:32.707 [info] > git status -z -uall [210ms]
+2025-09-30 16:02:37.919 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:02:37.926 [info] > git config --get commit.template [1ms]
+2025-09-30 16:02:37.926 [info] > git remote --verbose [7ms]
+2025-09-30 16:02:37.932 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:02:37.932 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:02:37.947 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:02:38.038 [info] > git status -z -uall [99ms]
+2025-09-30 16:02:43.194 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:02:43.200 [info] > git remote --verbose [6ms]
+2025-09-30 16:02:43.200 [info] > git config --get commit.template [1ms]
+2025-09-30 16:02:43.209 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 16:02:43.210 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:02:43.222 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:02:43.332 [info] > git status -z -uall [117ms]
+2025-09-30 16:02:48.505 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:02:48.513 [info] > git config --get commit.template [1ms]
+2025-09-30 16:02:48.514 [info] > git remote --verbose [9ms]
+2025-09-30 16:02:48.521 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 16:02:48.521 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:02:48.539 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:02:48.634 [info] > git status -z -uall [103ms]
+2025-09-30 16:02:53.785 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:02:53.793 [info] > git config --get commit.template [1ms]
+2025-09-30 16:02:53.793 [info] > git remote --verbose [8ms]
+2025-09-30 16:02:53.801 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:02:53.801 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:02:53.816 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:02:53.912 [info] > git status -z -uall [105ms]
+2025-09-30 16:02:59.063 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:02:59.072 [info] > git config --get commit.template [1ms]
+2025-09-30 16:02:59.072 [info] > git remote --verbose [9ms]
+2025-09-30 16:02:59.080 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 16:02:59.080 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:02:59.096 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:02:59.196 [info] > git status -z -uall [109ms]
+2025-09-30 16:03:01.323 [info] > git check-ignore -v -z --stdin [2ms]
+2025-09-30 16:03:04.358 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:03:04.372 [info] > git config --get commit.template [1ms]
+2025-09-30 16:03:04.372 [info] > git remote --verbose [14ms]
+2025-09-30 16:03:04.385 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [2ms]
+2025-09-30 16:03:04.385 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:03:04.401 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:03:04.519 [info] > git status -z -uall [127ms]
+2025-09-30 16:03:09.682 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:03:09.690 [info] > git remote --verbose [8ms]
+2025-09-30 16:03:09.691 [info] > git config --get commit.template [1ms]
+2025-09-30 16:03:09.699 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:03:09.699 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:03:09.717 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:03:09.821 [info] > git status -z -uall [111ms]
+2025-09-30 16:03:14.993 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:03:15.001 [info] > git config --get commit.template [1ms]
+2025-09-30 16:03:15.001 [info] > git remote --verbose [8ms]
+2025-09-30 16:03:15.009 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:03:15.009 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:03:15.023 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:03:15.129 [info] > git status -z -uall [114ms]
+2025-09-30 16:03:20.296 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:03:20.307 [info] > git config --get commit.template [1ms]
+2025-09-30 16:03:20.307 [info] > git remote --verbose [11ms]
+2025-09-30 16:03:20.314 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:03:20.315 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:03:20.328 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:03:20.475 [info] > git status -z -uall [155ms]
+2025-09-30 16:03:48.474 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:03:48.482 [info] > git config --get commit.template [1ms]
+2025-09-30 16:03:48.482 [info] > git remote --verbose [9ms]
+2025-09-30 16:03:48.493 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:03:48.493 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:03:48.509 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:03:48.645 [info] > git status -z -uall [145ms]
+2025-09-30 16:03:53.830 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:03:53.839 [info] > git config --get commit.template [1ms]
+2025-09-30 16:03:53.840 [info] > git remote --verbose [10ms]
+2025-09-30 16:03:53.848 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:03:53.848 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:03:53.868 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:03:53.974 [info] > git status -z -uall [117ms]
+2025-09-30 16:07:20.735 [info] > git config user.email [3ms]
+2025-09-30 16:07:20.754 [info] > git rev-parse --show-toplevel [31ms]
+2025-09-30 16:07:20.755 [info] > git config user.name [1ms]
+2025-09-30 16:07:20.776 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:07:20.784 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author root [19ms]
+2025-09-30 16:07:20.784 [info] fatal: bad default revision 'HEAD'
+2025-09-30 16:07:20.786 [info] > git config --get commit.template [2ms]
+2025-09-30 16:07:20.786 [info] > git remote --verbose [10ms]
+2025-09-30 16:07:20.792 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:07:20.792 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:07:20.807 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:07:20.921 [info] > git status -z -uall [124ms]
+2025-09-30 16:07:22.831 [info] > git diff --no-color [13ms]
+2025-09-30 16:07:22.848 [info] > git rev-parse --abbrev-ref HEAD [1ms]
+2025-09-30 16:07:22.848 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 16:07:22.943 [info] > git ls-files --others --exclude-standard [112ms]
+2025-09-30 16:07:23.323 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-30 16:07:26.272 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:07:26.284 [info] > git config --get commit.template [1ms]
+2025-09-30 16:07:26.285 [info] > git remote --verbose [13ms]
+2025-09-30 16:07:26.294 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:07:26.294 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:07:26.312 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:07:26.437 [info] > git status -z -uall [133ms]
+2025-09-30 16:07:31.717 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:07:31.724 [info] > git config --get commit.template [0ms]
+2025-09-30 16:07:31.724 [info] > git remote --verbose [7ms]
+2025-09-30 16:07:31.732 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [3ms]
+2025-09-30 16:07:31.732 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:07:31.748 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:07:31.845 [info] > git status -z -uall [104ms]
+2025-09-30 16:07:33.209 [info] > git diff --no-color [16ms]
+2025-09-30 16:07:33.225 [info] > git rev-parse --abbrev-ref HEAD [2ms]
+2025-09-30 16:07:33.225 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 16:07:33.309 [info] > git ls-files --others --exclude-standard [101ms]
+2025-09-30 16:07:33.689 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-30 16:07:36.990 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:07:36.995 [info] > git remote --verbose [5ms]
+2025-09-30 16:07:36.996 [info] > git config --get commit.template [1ms]
+2025-09-30 16:07:37.001 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:07:37.001 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:07:37.018 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:07:37.107 [info] > git status -z -uall [100ms]
+2025-09-30 16:07:45.283 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:07:45.290 [info] > git remote --verbose [7ms]
+2025-09-30 16:07:45.290 [info] > git config --get commit.template [1ms]
+2025-09-30 16:07:45.297 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:07:45.297 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:07:45.312 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:07:45.416 [info] > git status -z -uall [113ms]
+2025-09-30 16:07:50.565 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:07:50.573 [info] > git config --get commit.template [1ms]
+2025-09-30 16:07:50.573 [info] > git remote --verbose [8ms]
+2025-09-30 16:07:50.580 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:07:50.580 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:07:50.595 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:07:50.711 [info] > git status -z -uall [125ms]
+2025-09-30 16:07:55.857 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:07:55.866 [info] > git config --get commit.template [1ms]
+2025-09-30 16:07:55.866 [info] > git remote --verbose [10ms]
+2025-09-30 16:07:55.874 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 16:07:55.874 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:07:55.886 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:07:55.985 [info] > git status -z -uall [106ms]
+2025-09-30 16:08:01.132 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:08:01.139 [info] > git remote --verbose [7ms]
+2025-09-30 16:08:01.140 [info] > git config --get commit.template [2ms]
+2025-09-30 16:08:01.147 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 16:08:01.148 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:08:01.166 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:08:01.255 [info] > git status -z -uall [100ms]
+2025-09-30 16:08:06.408 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:08:06.414 [info] > git remote --verbose [6ms]
+2025-09-30 16:08:06.415 [info] > git config --get commit.template [1ms]
+2025-09-30 16:08:06.420 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 16:08:06.421 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:08:06.431 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:08:06.532 [info] > git status -z -uall [107ms]
+2025-09-30 16:08:11.683 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:08:11.689 [info] > git config --get commit.template [1ms]
+2025-09-30 16:08:11.689 [info] > git remote --verbose [6ms]
+2025-09-30 16:08:11.697 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:08:11.697 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:08:11.712 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:08:11.806 [info] > git status -z -uall [103ms]
+2025-09-30 16:08:16.947 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:08:16.959 [info] > git remote --verbose [12ms]
+2025-09-30 16:08:16.960 [info] > git config --get commit.template [2ms]
+2025-09-30 16:08:16.970 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:08:16.970 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:08:16.989 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:08:17.078 [info] > git status -z -uall [100ms]
+2025-09-30 16:08:22.249 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:08:22.263 [info] > git config --get commit.template [2ms]
+2025-09-30 16:08:22.264 [info] > git remote --verbose [16ms]
+2025-09-30 16:08:22.272 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:08:22.272 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:08:22.291 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:08:22.427 [info] > git status -z -uall [147ms]
+2025-09-30 16:08:27.607 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:08:27.625 [info] > git config --get commit.template [2ms]
+2025-09-30 16:08:27.625 [info] > git remote --verbose [18ms]
+2025-09-30 16:08:27.636 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [3ms]
+2025-09-30 16:08:27.636 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:08:27.656 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:08:27.809 [info] > git status -z -uall [163ms]
+2025-09-30 16:08:33.033 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:08:33.041 [info] > git config --get commit.template [1ms]
+2025-09-30 16:08:33.041 [info] > git remote --verbose [9ms]
+2025-09-30 16:08:33.049 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [2ms]
+2025-09-30 16:08:33.049 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:08:33.065 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:08:33.213 [info] > git status -z -uall [157ms]
+2025-09-30 16:08:38.396 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:08:38.403 [info] > git remote --verbose [7ms]
+2025-09-30 16:08:38.404 [info] > git config --get commit.template [2ms]
+2025-09-30 16:08:38.411 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:08:38.411 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:08:38.426 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:08:38.521 [info] > git status -z -uall [103ms]
+2025-09-30 16:08:43.670 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:08:43.678 [info] > git config --get commit.template [1ms]
+2025-09-30 16:08:43.678 [info] > git remote --verbose [9ms]
+2025-09-30 16:08:43.686 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:08:43.686 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:08:43.707 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:08:43.797 [info] > git status -z -uall [101ms]
+2025-09-30 16:08:48.960 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:08:48.973 [info] > git remote --verbose [13ms]
+2025-09-30 16:08:48.974 [info] > git config --get commit.template [1ms]
+2025-09-30 16:08:48.981 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:08:48.981 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:08:49.005 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [8ms]
+2025-09-30 16:08:49.086 [info] > git status -z -uall [97ms]
+2025-09-30 16:08:54.237 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:08:54.243 [info] > git remote --verbose [7ms]
+2025-09-30 16:08:54.243 [info] > git config --get commit.template [1ms]
+2025-09-30 16:08:54.251 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:08:54.252 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:08:54.269 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:08:54.358 [info] > git status -z -uall [97ms]
+2025-09-30 16:08:59.514 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:08:59.522 [info] > git config --get commit.template [1ms]
+2025-09-30 16:08:59.522 [info] > git remote --verbose [8ms]
+2025-09-30 16:08:59.530 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 16:08:59.530 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:08:59.546 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:08:59.635 [info] > git status -z -uall [95ms]
+2025-09-30 16:09:01.301 [info] > git diff --no-color [15ms]
+2025-09-30 16:09:01.333 [info] > git rev-parse --abbrev-ref HEAD [1ms]
+2025-09-30 16:09:01.333 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 16:09:01.469 [info] > git ls-files --others --exclude-standard [168ms]
+2025-09-30 16:09:01.682 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-30 16:09:04.816 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:09:04.839 [info] > git config --get commit.template [13ms]
+2025-09-30 16:09:04.839 [info] > git remote --verbose [24ms]
+2025-09-30 16:09:04.863 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:09:04.863 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:09:04.915 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:09:05.069 [info] > git status -z -uall [188ms]
+2025-09-30 16:09:07.208 [info] > git diff --no-color [15ms]
+2025-09-30 16:09:07.235 [info] > git rev-parse --abbrev-ref HEAD [4ms]
+2025-09-30 16:09:07.235 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 16:09:07.378 [info] > git ls-files --others --exclude-standard [170ms]
+2025-09-30 16:09:07.500 [info] > git rev-parse --show-toplevel [0ms]
+2025-09-30 16:09:10.332 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:09:10.341 [info] > git config --get commit.template [1ms]
+2025-09-30 16:09:10.341 [info] > git remote --verbose [9ms]
+2025-09-30 16:09:10.348 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 16:09:10.349 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:09:10.379 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:09:10.528 [info] > git status -z -uall [164ms]
+2025-09-30 16:09:12.237 [info] > git diff --no-color [16ms]
+2025-09-30 16:09:12.275 [info] > git rev-parse --abbrev-ref HEAD [2ms]
+2025-09-30 16:09:12.275 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 16:09:12.404 [info] > git ls-files --others --exclude-standard [168ms]
+2025-09-30 16:09:12.718 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-30 16:09:15.760 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:09:15.769 [info] > git config --get commit.template [1ms]
+2025-09-30 16:09:15.769 [info] > git remote --verbose [9ms]
+2025-09-30 16:09:15.777 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:09:15.777 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:09:15.817 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:09:15.931 [info] > git status -z -uall [140ms]
+2025-09-30 16:09:17.690 [info] > git diff --no-color [18ms]
+2025-09-30 16:09:17.715 [info] > git rev-parse --abbrev-ref HEAD [2ms]
+2025-09-30 16:09:17.715 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 16:09:17.974 [info] > git ls-files --others --exclude-standard [284ms]
+2025-09-30 16:09:18.156 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-30 16:09:21.156 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:09:21.168 [info] > git remote --verbose [12ms]
+2025-09-30 16:09:21.179 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 16:09:21.180 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:09:21.180 [info] > git config --get commit.template [13ms]
+2025-09-30 16:09:21.232 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:09:21.406 [info] > git status -z -uall [202ms]
+2025-09-30 16:09:23.035 [info] > git diff --no-color [15ms]
+2025-09-30 16:09:23.063 [info] > git rev-parse --abbrev-ref HEAD [1ms]
+2025-09-30 16:09:23.063 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 16:09:23.279 [info] > git ls-files --others --exclude-standard [245ms]
+2025-09-30 16:09:23.570 [info] > git rev-parse --show-toplevel [0ms]
+2025-09-30 16:09:26.628 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:09:26.648 [info] > git config --get commit.template [1ms]
+2025-09-30 16:09:26.648 [info] > git remote --verbose [22ms]
+2025-09-30 16:09:26.657 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:09:26.657 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:09:26.704 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:09:26.846 [info] > git status -z -uall [175ms]
+2025-09-30 16:09:28.616 [info] > git diff --no-color [24ms]
+2025-09-30 16:09:28.641 [info] > git rev-parse --abbrev-ref HEAD [1ms]
+2025-09-30 16:09:28.641 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 16:09:28.778 [info] > git ls-files --others --exclude-standard [164ms]
+2025-09-30 16:09:29.070 [info] > git rev-parse --show-toplevel [0ms]
+2025-09-30 16:09:32.109 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:09:32.120 [info] > git remote --verbose [11ms]
+2025-09-30 16:09:32.123 [info] > git config --get commit.template [3ms]
+2025-09-30 16:09:32.131 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:09:32.131 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:09:32.174 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:09:32.296 [info] > git status -z -uall [151ms]
+2025-09-30 16:09:33.933 [info] > git diff --no-color [14ms]
+2025-09-30 16:09:33.964 [info] > git rev-parse --abbrev-ref HEAD [1ms]
+2025-09-30 16:09:33.964 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 16:09:34.051 [info] > git ls-files --others --exclude-standard [120ms]
+2025-09-30 16:09:34.413 [info] > git rev-parse --show-toplevel [2ms]
+2025-09-30 16:09:37.491 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:09:37.500 [info] > git config --get commit.template [0ms]
+2025-09-30 16:09:37.501 [info] > git remote --verbose [10ms]
+2025-09-30 16:09:37.508 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 16:09:37.509 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:09:37.523 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:09:37.612 [info] > git status -z -uall [97ms]
+2025-09-30 16:09:39.009 [info] > git diff --no-color [7ms]
+2025-09-30 16:09:39.019 [info] > git rev-parse --abbrev-ref HEAD [1ms]
+2025-09-30 16:09:39.019 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 16:09:39.246 [info] > git ls-files --others --exclude-standard [238ms]
+2025-09-30 16:09:39.513 [info] > git rev-parse --show-toplevel [2ms]
+2025-09-30 16:09:42.763 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:09:42.770 [info] > git remote --verbose [7ms]
+2025-09-30 16:09:42.770 [info] > git config --get commit.template [1ms]
+2025-09-30 16:09:42.776 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:09:42.776 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:09:42.795 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:09:42.883 [info] > git status -z -uall [99ms]
+2025-09-30 16:09:48.024 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:09:48.030 [info] > git config --get commit.template [1ms]
+2025-09-30 16:09:48.030 [info] > git remote --verbose [6ms]
+2025-09-30 16:09:48.037 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [2ms]
+2025-09-30 16:09:48.037 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:09:48.049 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:09:48.137 [info] > git status -z -uall [94ms]
+2025-09-30 16:11:00.133 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:11:00.169 [info] > git config --get commit.template [1ms]
+2025-09-30 16:11:00.169 [info] > git remote --verbose [36ms]
+2025-09-30 16:11:00.185 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:11:00.185 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:11:00.211 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-09-30 16:11:00.340 [info] > git status -z -uall [146ms]
+2025-09-30 16:11:05.792 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:11:05.802 [info] > git config --get commit.template [1ms]
+2025-09-30 16:11:05.802 [info] > git remote --verbose [10ms]
+2025-09-30 16:11:05.810 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:11:05.810 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:11:05.835 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:11:06.022 [info] > git status -z -uall [198ms]
+2025-09-30 16:11:11.251 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:11:11.260 [info] > git remote --verbose [9ms]
+2025-09-30 16:11:11.261 [info] > git config --get commit.template [2ms]
+2025-09-30 16:11:11.271 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [2ms]
+2025-09-30 16:11:11.271 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:11:11.289 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:11:11.388 [info] > git status -z -uall [110ms]
+2025-09-30 16:11:16.543 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:11:16.551 [info] > git config --get commit.template [1ms]
+2025-09-30 16:11:16.551 [info] > git remote --verbose [8ms]
+2025-09-30 16:11:16.558 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:11:16.558 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:11:16.578 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:11:16.691 [info] > git status -z -uall [121ms]
+2025-09-30 16:11:21.851 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:11:21.859 [info] > git remote --verbose [9ms]
+2025-09-30 16:11:21.860 [info] > git config --get commit.template [2ms]
+2025-09-30 16:11:21.868 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:11:21.868 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:11:21.885 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:11:21.982 [info] > git status -z -uall [106ms]
+2025-09-30 16:11:27.137 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:11:27.142 [info] > git remote --verbose [5ms]
+2025-09-30 16:11:27.143 [info] > git config --get commit.template [2ms]
+2025-09-30 16:11:27.151 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 16:11:27.151 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:11:27.167 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:11:27.272 [info] > git status -z -uall [115ms]
+2025-09-30 16:11:32.427 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:11:32.434 [info] > git remote --verbose [7ms]
+2025-09-30 16:11:32.435 [info] > git config --get commit.template [1ms]
+2025-09-30 16:11:32.441 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [0ms]
+2025-09-30 16:11:32.441 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:11:32.460 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:11:32.551 [info] > git status -z -uall [104ms]
+2025-09-30 16:11:37.712 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:11:37.721 [info] > git remote --verbose [10ms]
+2025-09-30 16:11:37.722 [info] > git config --get commit.template [1ms]
+2025-09-30 16:11:37.729 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:11:37.730 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:11:37.742 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:11:37.834 [info] > git status -z -uall [99ms]
+2025-09-30 16:11:42.980 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:11:42.987 [info] > git config --get commit.template [1ms]
+2025-09-30 16:11:42.987 [info] > git remote --verbose [7ms]
+2025-09-30 16:11:42.994 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:11:42.994 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:11:43.009 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:11:43.119 [info] > git status -z -uall [118ms]
+2025-09-30 16:12:15.209 [info] > git rev-parse --show-toplevel [1ms]
+2025-09-30 16:13:45.668 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:13:45.675 [info] > git remote --verbose [8ms]
+2025-09-30 16:13:45.676 [info] > git config --get commit.template [2ms]
+2025-09-30 16:13:45.682 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:13:45.683 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:13:45.700 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:13:45.833 [info] > git status -z -uall [144ms]
+2025-09-30 16:13:51.258 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:13:51.259 [info] > git remote --verbose [2ms]
+2025-09-30 16:13:51.259 [info] > git config --get commit.template [9ms]
+2025-09-30 16:13:51.266 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:13:51.266 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:13:51.280 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:13:51.364 [info] > git status -z -uall [92ms]
+2025-09-30 16:14:18.938 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:14:18.945 [info] > git remote --verbose [7ms]
+2025-09-30 16:14:18.946 [info] > git config --get commit.template [2ms]
+2025-09-30 16:14:18.956 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [2ms]
+2025-09-30 16:14:18.957 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:14:18.971 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-09-30 16:14:19.133 [info] > git status -z -uall [171ms]
+2025-09-30 16:14:24.474 [warning] [Git][getRemotes] Error: ENOENT: no such file or directory, open '/root/--git-common-dir/config'
+2025-09-30 16:14:24.482 [info] > git config --get commit.template [0ms]
+2025-09-30 16:14:24.482 [info] > git remote --verbose [8ms]
+2025-09-30 16:14:24.488 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname) refs/heads/master refs/remotes/master [1ms]
+2025-09-30 16:14:24.488 [warning] [Git][getBranch] No such branch: master
+2025-09-30 16:14:24.504 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-09-30 16:14:24.598 [info] > git status -z -uall [104ms]
+2025-09-30 16:14:26.060 [info] > git diff --no-color [17ms]
+2025-09-30 16:14:26.088 [info] > git rev-parse --abbrev-ref HEAD [1ms]
+2025-09-30 16:14:26.088 [info] fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+2025-09-30 16:14:26.181 [info] > git ls-files --others --exclude-standard [123ms]
+2025-09-30 16:14:26.534 [info] > git rev-parse --show-toplevel [1ms]

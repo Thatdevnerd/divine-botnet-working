@@ -1,0 +1,20 @@
+2025-09-30 15:32:53.363 [error] Error getting repo info: Failed to execute git
+2025-09-30 15:32:53.363 [error] Error: Failed to execute git
+	at t.Git._exec (/root/.cursor-server/bin/867f14c797c14c23a187097ea179bc97d215a7c0/extensions/git/dist/main.js:2:34408)
+	at async t.Git.exec (/root/.cursor-server/bin/867f14c797c14c23a187097ea179bc97d215a7c0/extensions/git/dist/main.js:2:33531)
+	at async t.GitProvider.executeGitCommandStable (/root/.cursor-server/bin/867f14c797c14c23a187097ea179bc97d215a7c0/extensions/cursor-retrieval/dist/main.js:2:1312234)
+	at async t.GitProvider.getRepoInfo (/root/.cursor-server/bin/867f14c797c14c23a187097ea179bc97d215a7c0/extensions/cursor-retrieval/dist/main.js:2:1288186)
+2025-09-30 15:32:53.363 [info] Creating Indexing Repo client:  https://repo42.cursor.sh
+2025-09-30 15:32:53.363 [info] Creating repo client with backend url: https://repo42.cursor.sh
+2025-09-30 15:32:53.555 [warning] Failed to get symbolic ref: Failed to execute git
+2025-09-30 15:32:53.591 [info] Using existing keys for an index
+2025-09-30 15:32:53.591 [info] InternalRepoInfo constructor with preferredEmbeddingModel 0
+2025-09-30 15:32:53.615 [warning] Failed to get default branch from git config: Failed to execute git
+2025-09-30 15:32:53.649 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 15:32:54.002 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 15:32:54.353 [error] We currently do not allow indexing the home directory.
+2025-09-30 15:32:54.353 [info] Indexing job successfully done or aborted.
+2025-09-30 15:32:56.655 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 15:33:01.928 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 15:33:07.229 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 15:33:28.075 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')

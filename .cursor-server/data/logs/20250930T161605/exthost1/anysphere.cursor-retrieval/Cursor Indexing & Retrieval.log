@@ -1,0 +1,34 @@
+2025-09-30 16:16:20.349 [error] Error getting repo info: Failed to execute git
+2025-09-30 16:16:20.350 [error] Error: Failed to execute git
+	at t.Git._exec (/root/.cursor-server/bin/34881053400013f38e2354f1479c88c9067039a0/extensions/git/dist/main.js:2:34408)
+	at async t.Git.exec (/root/.cursor-server/bin/34881053400013f38e2354f1479c88c9067039a0/extensions/git/dist/main.js:2:33531)
+	at async t.GitProvider.executeGitCommandStable (/root/.cursor-server/bin/34881053400013f38e2354f1479c88c9067039a0/extensions/cursor-retrieval/dist/main.js:2:1287404)
+	at async t.GitProvider.getRepoInfo (/root/.cursor-server/bin/34881053400013f38e2354f1479c88c9067039a0/extensions/cursor-retrieval/dist/main.js:2:1263356)
+2025-09-30 16:16:20.350 [info] Creating Indexing Repo client:  https://repo42.cursor.sh
+2025-09-30 16:16:20.350 [info] Creating repo client with backend url: https://repo42.cursor.sh
+2025-09-30 16:16:21.781 [info] Using existing keys for an index
+2025-09-30 16:16:21.781 [info] InternalRepoInfo constructor with preferredEmbeddingModel 0
+2025-09-30 16:16:21.905 [warning] Failed to get symbolic ref: Failed to execute git
+2025-09-30 16:16:22.153 [warning] Failed to get default branch from git config: Failed to execute git
+2025-09-30 16:16:22.186 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 16:16:22.727 [error] We currently do not allow indexing the home directory.
+2025-09-30 16:16:22.727 [info] Indexing job successfully done or aborted.
+2025-09-30 16:16:28.577 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 16:16:35.297 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 16:17:02.661 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 16:21:35.731 [info] multiCodebaseIndexingJob dispose
+2025-09-30 16:21:35.731 [info] Aborting indexing job.
+2025-09-30 16:21:35.731 [error] We currently do not allow indexing the home directory.
+2025-09-30 16:21:35.731 [info] Indexing job successfully done or aborted.
+2025-09-30 16:26:09.039 [error] Error getting user commits: Failed to execute git
+2025-09-30 16:26:48.731 [info] multiCodebaseIndexingJob dispose
+2025-09-30 16:26:48.731 [info] Aborting indexing job.
+2025-09-30 16:26:48.731 [error] We currently do not allow indexing the home directory.
+2025-09-30 16:26:48.731 [info] Indexing job successfully done or aborted.
+2025-09-30 16:31:50.623 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 16:32:01.729 [info] multiCodebaseIndexingJob dispose
+2025-09-30 16:32:01.729 [info] Aborting indexing job.
+2025-09-30 16:32:01.729 [error] We currently do not allow indexing the home directory.
+2025-09-30 16:32:01.729 [info] Indexing job successfully done or aborted.
+2025-09-30 16:32:57.851 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 16:33:19.103 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')

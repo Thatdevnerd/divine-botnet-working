@@ -1,0 +1,4 @@
+2025-09-30 09:29:26.791 [info] Extension host with pid 24504 started
+2025-09-30 09:29:27.341 [info] Eager extensions activated
+2025-09-30 09:29:37.254 [info] Extension host terminating: received terminate message from renderer
+2025-09-30 09:29:37.255 [info] Extension host with pid 24504 exiting with code 0

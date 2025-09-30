@@ -1,0 +1,3 @@
+2025-09-30 15:00:25.672 [info] Creating Indexing Repo client:  https://repo42.cursor.sh
+2025-09-30 15:00:25.672 [info] Creating repo client with backend url: https://repo42.cursor.sh
+2025-09-30 15:00:25.952 [info] Git indexing is disabled in the server config.
