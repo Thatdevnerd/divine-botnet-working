@@ -32,3 +32,17 @@
 2025-09-30 16:32:01.729 [info] Indexing job successfully done or aborted.
 2025-09-30 16:32:57.851 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
 2025-09-30 16:33:19.103 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 16:33:35.589 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 16:33:38.227 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 16:34:54.691 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 16:35:01.373 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 16:35:15.244 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 16:35:15.534 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 16:35:40.818 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-09-30 16:36:09.067 [info] Get user commits took 19.301353000104427ms for 10 commits
+2025-09-30 16:36:09.158 [warning] Failed to get symbolic ref: Failed to execute git
+2025-09-30 16:36:09.165 [info] Picked default branch from method 1.
+2025-09-30 16:37:14.730 [info] multiCodebaseIndexingJob dispose
+2025-09-30 16:37:14.730 [info] Aborting indexing job.
+2025-09-30 16:37:14.730 [error] We currently do not allow indexing the home directory.
+2025-09-30 16:37:14.730 [info] Indexing job successfully done or aborted.

@@ -1,0 +1,14 @@
+2025-10-01 12:37:51.135 [info] Creating Indexing Repo client:  https://repo42.cursor.sh
+2025-10-01 12:37:51.135 [info] Creating repo client with backend url: https://repo42.cursor.sh
+2025-10-01 12:37:51.191 [info] Using existing keys for an index
+2025-10-01 12:37:51.191 [info] InternalRepoInfo constructor with preferredEmbeddingModel 0
+2025-10-01 12:37:51.303 [warning] Failed to get symbolic ref: Failed to execute git
+2025-10-01 12:37:51.304 [warning] Failed to get symbolic ref: Failed to execute git
+2025-10-01 12:37:51.317 [info] Picked default branch from method 1.
+2025-10-01 12:37:51.317 [info] Picked default branch from method 1.
+2025-10-01 12:37:51.378 [info] Using existing keys for an index
+2025-10-01 12:37:51.378 [info] InternalRepoInfo constructor with preferredEmbeddingModel 0
+2025-10-01 12:37:51.390 [error] We currently do not allow indexing the home directory.
+2025-10-01 12:37:51.390 [info] Indexing job successfully done or aborted.
+2025-10-01 12:42:05.287 [info] multiCodebaseIndexingJob dispose
+2025-10-01 12:42:05.287 [info] Aborting indexing job.

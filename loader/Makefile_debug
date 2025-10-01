@@ -1,0 +1,51 @@
+CC = gcc
+CFLAGS = -Wall -Wextra -std=c99 -O2 -g -DDEBUG
+LDFLAGS = -lpthread
+
+# Source files for debug version
+SOURCES = src/main_debug.c src/connection_debug.c src/server_debug.c src/binary.c src/telnet_info.c src/util.c
+HEADERS = src/headers/*.h
+
+# Object files
+OBJECTS = $(SOURCES:.c=.o)
+
+# Target executable
+TARGET = scanListen_debug
+
+# Default target
+all: $(TARGET)
+
+# Compile the debug version
+$(TARGET): $(OBJECTS)
+	$(CC) $(OBJECTS) -o $(TARGET) $(LDFLAGS)
+	@echo "Debug version compiled successfully: $(TARGET)"
+
+# Compile object files
+%.o: %.c $(HEADERS)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Clean up
+clean:
+	rm -f $(OBJECTS) $(TARGET)
+	@echo "Debug build cleaned"
+
+# Install debug version
+install: $(TARGET)
+	cp $(TARGET) /usr/local/bin/
+	@echo "Debug version installed to /usr/local/bin/"
+
+# Run debug version with small test set
+test: $(TARGET)
+	@echo "Starting debug test with small target set..."
+	head -10 telnet.txt | ./$(TARGET) test_debug
+
+# Show help
+help:
+	@echo "Available targets:"
+	@echo "  all      - Build the debug version (default)"
+	@echo "  clean    - Remove compiled files"
+	@echo "  install  - Install debug version to /usr/local/bin/"
+	@echo "  test     - Run debug version with small test set"
+	@echo "  help     - Show this help message"
+
+.PHONY: all clean install test help

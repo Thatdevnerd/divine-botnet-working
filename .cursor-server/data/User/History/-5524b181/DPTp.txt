@@ -1,0 +1,242 @@
+# Common IoT Device Credentials
+# Format: username:password
+
+# Default admin credentials
+admin:admin
+admin:password
+admin:12345
+admin:123456
+admin:1234
+admin:admin123
+admin:
+root:root
+root:admin
+root:password
+root:12345
+root:123456
+root:1234
+root:root123
+root:
+
+# Empty passwords
+admin:
+root:
+user:
+guest:
+support:
+service:
+
+# Common patterns
+admin:password
+admin:12345
+admin:123456
+admin:admin
+admin:admin123
+root:password
+root:12345
+root:123456
+root:root
+root:root123
+
+# User accounts
+user:user
+user:password
+user:12345
+user:123456
+guest:guest
+guest:password
+guest:12345
+support:support
+support:password
+service:service
+service:password
+
+# Vendor-specific defaults
+# TP-Link
+admin:admin
+admin:123456
+admin:password
+
+# D-Link
+admin:
+admin:admin
+admin:password
+user:user
+user:password
+
+# Netgear
+admin:password
+admin:123456
+admin:admin
+
+# Linksys
+admin:admin
+admin:password
+admin:123456
+
+# ASUS
+admin:admin
+admin:password
+admin:123456
+
+# Belkin
+admin:
+admin:admin
+admin:password
+
+# Cisco
+admin:admin
+admin:password
+admin:123456
+cisco:cisco
+
+# Huawei
+admin:admin
+admin:password
+admin:123456
+root:admin
+
+# ZTE
+admin:admin
+admin:password
+admin:123456
+root:admin
+
+# Ubiquiti
+ubnt:ubnt
+admin:admin
+admin:password
+
+# MikroTik
+admin:
+admin:admin
+admin:password
+
+# Industrial devices
+admin:admin
+admin:password
+admin:12345
+admin:123456
+root:root
+root:admin
+root:password
+root:12345
+root:123456
+
+# PLC/SCADA defaults
+admin:admin
+admin:password
+admin:12345
+admin:123456
+root:root
+root:admin
+root:password
+root:12345
+root:123456
+plc:plc
+scada:scada
+
+# Camera defaults
+admin:admin
+admin:password
+admin:12345
+admin:123456
+root:root
+root:admin
+root:password
+root:12345
+root:123456
+user:user
+user:password
+guest:guest
+guest:password
+
+# Router/Modem defaults
+admin:admin
+admin:password
+admin:12345
+admin:123456
+root:root
+root:admin
+root:password
+root:12345
+root:123456
+user:user
+user:password
+guest:guest
+guest:password
+
+# Smart home devices
+admin:admin
+admin:password
+admin:12345
+admin:123456
+root:root
+root:admin
+root:password
+root:12345
+root:123456
+user:user
+user:password
+guest:guest
+guest:password
+
+# Embedded systems
+admin:admin
+admin:password
+admin:12345
+admin:123456
+root:root
+root:admin
+root:password
+root:12345
+root:123456
+user:user
+user:password
+guest:guest
+guest:password
+
+# Network equipment
+admin:admin
+admin:password
+admin:12345
+admin:123456
+root:root
+root:admin
+root:password
+root:12345
+root:123456
+user:user
+user:password
+guest:guest
+guest:password
+
+# Server defaults
+admin:admin
+admin:password
+admin:12345
+admin:123456
+root:root
+root:admin
+root:password
+root:12345
+root:123456
+user:user
+user:password
+guest:guest
+guest:password
+
+# Workstation defaults
+admin:admin
+admin:password
+admin:12345
+admin:123456
+root:root
+root:admin
+root:password
+root:12345
+root:123456
+user:user
+user:password
+guest:guest
+guest:password

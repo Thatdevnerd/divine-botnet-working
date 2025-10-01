@@ -1,0 +1,47 @@
+2025-10-01 10:21:46.159 [info] Creating Indexing Repo client:  https://repo42.cursor.sh
+2025-10-01 10:21:46.159 [info] Creating repo client with backend url: https://repo42.cursor.sh
+2025-10-01 10:21:46.212 [info] Using existing keys for an index
+2025-10-01 10:21:46.212 [info] InternalRepoInfo constructor with preferredEmbeddingModel 0
+2025-10-01 10:21:46.250 [warning] Failed to get symbolic ref: Failed to execute git
+2025-10-01 10:21:46.250 [warning] Failed to get symbolic ref: Failed to execute git
+2025-10-01 10:21:46.308 [info] Picked default branch from method 1.
+2025-10-01 10:21:46.309 [info] Picked default branch from method 1.
+2025-10-01 10:21:46.452 [info] Using existing keys for an index
+2025-10-01 10:21:46.452 [info] InternalRepoInfo constructor with preferredEmbeddingModel 0
+2025-10-01 10:21:46.476 [error] We currently do not allow indexing the home directory.
+2025-10-01 10:21:46.476 [info] Indexing job successfully done or aborted.
+2025-10-01 10:26:59.477 [info] multiCodebaseIndexingJob dispose
+2025-10-01 10:26:59.477 [info] Aborting indexing job.
+2025-10-01 10:26:59.477 [error] We currently do not allow indexing the home directory.
+2025-10-01 10:26:59.478 [info] Indexing job successfully done or aborted.
+2025-10-01 10:28:43.800 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-10-01 10:31:24.440 [info] Get user commits took 8.882526000030339ms for 10 commits
+2025-10-01 10:32:01.945 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-10-01 10:32:12.477 [info] multiCodebaseIndexingJob dispose
+2025-10-01 10:32:12.477 [info] Aborting indexing job.
+2025-10-01 10:32:12.477 [error] We currently do not allow indexing the home directory.
+2025-10-01 10:32:12.477 [info] Indexing job successfully done or aborted.
+2025-10-01 10:33:03.621 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/root/.gitmodules')
+2025-10-01 10:37:25.478 [info] multiCodebaseIndexingJob dispose
+2025-10-01 10:37:25.478 [info] Aborting indexing job.
+2025-10-01 10:37:25.478 [error] We currently do not allow indexing the home directory.
+2025-10-01 10:37:25.478 [info] Indexing job successfully done or aborted.
+2025-10-01 10:41:24.480 [info] Get user commits took 7.879428999964148ms for 10 commits
+2025-10-01 10:42:38.478 [info] multiCodebaseIndexingJob dispose
+2025-10-01 10:42:38.478 [info] Aborting indexing job.
+2025-10-01 10:42:38.478 [error] We currently do not allow indexing the home directory.
+2025-10-01 10:42:38.478 [info] Indexing job successfully done or aborted.
+2025-10-01 10:47:51.479 [info] multiCodebaseIndexingJob dispose
+2025-10-01 10:47:51.479 [info] Aborting indexing job.
+2025-10-01 10:47:51.479 [error] We currently do not allow indexing the home directory.
+2025-10-01 10:47:51.479 [info] Indexing job successfully done or aborted.
+2025-10-01 10:51:24.498 [info] Get user commits took 9.005520999897271ms for 10 commits
+2025-10-01 10:53:04.480 [info] multiCodebaseIndexingJob dispose
+2025-10-01 10:53:04.480 [info] Aborting indexing job.
+2025-10-01 10:53:04.480 [error] We currently do not allow indexing the home directory.
+2025-10-01 10:53:04.480 [info] Indexing job successfully done or aborted.
+2025-10-01 10:58:17.482 [info] multiCodebaseIndexingJob dispose
+2025-10-01 10:58:17.482 [info] Aborting indexing job.
+2025-10-01 10:58:17.482 [error] We currently do not allow indexing the home directory.
+2025-10-01 10:58:17.482 [info] Indexing job successfully done or aborted.
+2025-10-01 11:01:24.538 [info] Get user commits took 8.148847000207752ms for 10 commits

@@ -1,0 +1,29 @@
+2025-10-01 05:03:10.517 [info] 
+
+
+
+
+2025-10-01 05:03:10.526 [info] Extension host agent started.
+2025-10-01 05:03:11.342 [info] [127.0.0.1][206370c7][ManagementConnection] New connection established.
+2025-10-01 05:03:11.343 [info] [127.0.0.1][ea73bd95][ExtensionHostConnection] New connection established.
+2025-10-01 05:03:11.400 [info] [127.0.0.1][ea73bd95][ExtensionHostConnection] <6216> Launched Extension Host Process.
+2025-10-01 05:03:11.407 [info] Getting extensions control
+2025-10-01 05:08:10.527 [info] New EH opened, aborting shutdown
+2025-10-01 07:28:20.264 [info] [127.0.0.1][206370c7][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2025-10-01 07:32:38.897 [info] [127.0.0.1][206370c7][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2025-10-01 07:32:38.898 [info] [127.0.0.1][be241a3e][ManagementConnection] New connection established.
+2025-10-01 07:32:38.921 [info] [127.0.0.1][ed966996][ExtensionHostConnection] New connection established.
+2025-10-01 07:32:38.929 [info] [127.0.0.1][ed966996][ExtensionHostConnection] <14891> Launched Extension Host Process.
+2025-10-01 07:32:38.969 [info] Getting extensions control
+2025-10-01 07:37:39.090 [info] [127.0.0.1][206370c7][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+2025-10-01 07:37:39.264 [info] [127.0.0.1][ea73bd95][ExtensionHostConnection] <6216> Extension Host Process exited with code: 0, signal: null.
+2025-10-01 07:46:25.995 [info] [127.0.0.1][be241a3e][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2025-10-01 07:51:02.236 [info] [127.0.0.1][be241a3e][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2025-10-01 07:51:02.237 [info] [127.0.0.1][ed966996][ExtensionHostConnection] The client has reconnected.
+2025-10-01 07:56:02.405 [info] [127.0.0.1][be241a3e][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+2025-10-01 08:54:26.850 [info] [127.0.0.1][6bf3849c][ManagementConnection] New connection established.
+2025-10-01 08:54:26.862 [info] [127.0.0.1][cd0c2fde][ExtensionHostConnection] New connection established.
+2025-10-01 08:54:26.869 [info] [127.0.0.1][cd0c2fde][ExtensionHostConnection] <21610> Launched Extension Host Process.
+2025-10-01 08:54:26.927 [info] Getting extensions control
+2025-10-01 08:59:27.181 [info] [127.0.0.1][ed966996][ExtensionHostConnection] <14891> Extension Host Process exited with code: 0, signal: null.
+2025-10-01 09:37:08.934 [info] [127.0.0.1][6bf3849c][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...

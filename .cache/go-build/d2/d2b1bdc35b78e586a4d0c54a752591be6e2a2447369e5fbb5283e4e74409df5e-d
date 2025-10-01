@@ -1,0 +1,10 @@
+./admin.go
+./attack.go
+./bot.go
+./captcha.go
+./clientList.go
+./database.go
+./main.go
+./passwd.go
+./sessions.go
+./test_connection.go
