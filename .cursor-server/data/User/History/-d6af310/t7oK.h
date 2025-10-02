@@ -16,7 +16,7 @@ int util_stristr(char *, int, char *);
 ipv4_t util_local_addr(void);
 char *util_fdgets(char *, int, int);
 
-static inline int util_isupper(char c) { return c >= 'A' && c <= 'Z'; }
+static inline int util_isupper(char);
 static inline int util_isalpha(char c) { return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'); }
 static inline int util_isspace(char c) { return c == ' ' || c == '\t' || c == '\n' || c == '\r'; }
 static inline int util_isdigit(char c) { return c >= '0' && c <= '9'; }
