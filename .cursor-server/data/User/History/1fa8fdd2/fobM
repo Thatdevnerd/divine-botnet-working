@@ -1,0 +1,58 @@
+CC = gcc
+CFLAGS = -Wall -Wextra -std=c99 -O2 -g -DDEBUG -DSELFREP
+LDFLAGS = -lpthread
+
+# Source files for debug version with self-replication logging
+SOURCES = main.c table.c rand.c attack.c attack_tcp.c attack_udp.c attack_app.c \
+          scanner.c killer.c checksum.c resolv.c util.c debug_log.c
+
+# Object files
+OBJECTS = $(SOURCES:.c=.o)
+
+# Target executable
+TARGET = selfrep_debug
+
+# Default target
+all: $(TARGET)
+
+# Compile the debug version with self-replication logging
+$(TARGET): $(OBJECTS)
+	$(CC) $(OBJECTS) -o $(TARGET) $(LDFLAGS)
+	@echo "Self-replication debug version compiled successfully: $(TARGET)"
+
+# Compile object files
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Clean up
+clean:
+	rm -f $(OBJECTS) $(TARGET)
+	@echo "Debug build cleaned"
+
+# Install debug version
+install: $(TARGET)
+	cp $(TARGET) /usr/local/bin/
+	@echo "Debug version installed to /usr/local/bin/"
+
+# Run debug version with logging
+test: $(TARGET)
+	@echo "Starting self-replication debug test..."
+	@echo "Log file will be written to: /tmp/selfrep_debug.log"
+	./$(TARGET) test_selfrep
+
+# Monitor debug log in real-time
+monitor:
+	@echo "Monitoring self-replication debug log..."
+	tail -f /tmp/selfrep_debug.log
+
+# Show help
+help:
+	@echo "Available targets:"
+	@echo "  all      - Build the debug version with self-replication logging (default)"
+	@echo "  clean    - Remove compiled files"
+	@echo "  install  - Install debug version to /usr/local/bin/"
+	@echo "  test     - Run debug version with self-replication logging"
+	@echo "  monitor  - Monitor debug log in real-time"
+	@echo "  help     - Show this help message"
+
+.PHONY: all clean install test monitor help

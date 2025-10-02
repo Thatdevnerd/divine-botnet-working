@@ -1,0 +1,80 @@
+[37;01mXOR Connection/Terminal Started ➢[31;01m
+[37;01mTraceback/Loop Started Devices  ➢[31;01m
+[37;01mClearing Table History/Connections ➢[31;01m
+[37;01mKiller & Selfrep Have Started [Established CNC] ➢[31;01m
+[37;01mDatabase And TOR Remote Connection Started [TCP:666] ➢[31;01m
+[37;01mWelcome To Undefined C2 | MYSQL DB Opened. [LOCALHOST:3306] ➢[31;01m
+Received 4 bytes: 00000001 from 175.100.21.20:51333
+Bot connection detected, version: 1 from 175.100.21.20:51333
+Received 4 bytes: 00000001 from 92.46.54.58:49871
+Bot connection detected, version: 1 from 92.46.54.58:49871
+Received 4 bytes: 00000001 from 162.255.112.183:59367
+Bot connection detected, version: 1 from 162.255.112.183:59367
+Bot source: '' from 175.100.21.20:51333
+[Cosmic] Connected | IP Address: 175.100.21.20:51333 (source: )
+[1;37m[Cosmic] [0;32mConnected [1;37m| IP Address:[0;32m 175.100.21.20:51333 ()
+Bot source: '' from 162.255.112.183:59367
+[Cosmic] Connected | IP Address: 162.255.112.183:59367 (source: )
+[1;37m[Cosmic] [0;32mConnected [1;37m| IP Address:[0;32m 162.255.112.183:59367 ()
+Bot source: '' from 92.46.54.58:49871
+[Cosmic] Connected | IP Address: 92.46.54.58:49871 (source: )
+[1;37m[Cosmic] [0;32mConnected [1;37m| IP Address:[0;32m 92.46.54.58:49871 ()
+Received 4 bytes: 00000001 from 112.28.79.69:57240
+Bot connection detected, version: 1 from 112.28.79.69:57240
+Bot source: '' from 112.28.79.69:57240
+[Cosmic] Connected | IP Address: 112.28.79.69:57240 (source: )
+[1;37m[Cosmic] [0;32mConnected [1;37m| IP Address:[0;32m 112.28.79.69:57240 ()
+Received 4 bytes: 00000001 from 88.204.153.114:34570
+Bot connection detected, version: 1 from 88.204.153.114:34570
+Bot source: '' from 88.204.153.114:34570
+[Cosmic] Connected | IP Address: 88.204.153.114:34570 (source: )
+[1;37m[Cosmic] [0;32mConnected [1;37m| IP Address:[0;32m 88.204.153.114:34570 ()
+Received 4 bytes: 00000001 from 45.79.252.91:22514
+Bot connection detected, version: 1 from 45.79.252.91:22514
+Received 4 bytes: 00000001 from 172.236.148.103:34970
+Bot connection detected, version: 1 from 172.236.148.103:34970
+Received 4 bytes: 00000001 from 83.233.162.84:35048
+Bot connection detected, version: 1 from 83.233.162.84:35048
+Bot source: '' from 83.233.162.84:35048
+[Cosmic] Connected | IP Address: 83.233.162.84:35048 (source: )
+[1;37m[Cosmic] [0;32mConnected [1;37m| IP Address:[0;32m 83.233.162.84:35048 ()
+Received 4 bytes: 00000001 from 47.106.75.125:13540
+Bot connection detected, version: 1 from 47.106.75.125:13540
+Received 4 bytes: 00000001 from 117.48.218.234:59768
+Bot connection detected, version: 1 from 117.48.218.234:59768
+Bot source: '' from 117.48.218.234:59768
+[Cosmic] Connected | IP Address: 117.48.218.234:59768 (source: )
+[1;37m[Cosmic] [0;32mConnected [1;37m| IP Address:[0;32m 117.48.218.234:59768 ()
+Bot source: 'loader.wget' from 172.236.148.103:34970
+[Cosmic] Connected | IP Address: 172.236.148.103:34970 (source: loader.wget)
+[1;37m[Cosmic] [0;32mConnected [1;37m| IP Address:[0;32m 172.236.148.103:34970 (loader.wget)
+Bot source: '' from 45.79.252.91:22514
+[Cosmic] Connected | IP Address: 45.79.252.91:22514 (source: )
+[1;37m[Cosmic] [0;32mConnected [1;37m| IP Address:[0;32m 45.79.252.91:22514 ()
+Bot source: 'mips' from 47.106.75.125:13540
+[Cosmic] Connected | IP Address: 47.106.75.125:13540 (source: mips)
+[1;37m[Cosmic] [0;32mConnected [1;37m| IP Address:[0;32m 47.106.75.125:13540 (mips)
+Received 4 bytes: 00000001 from 162.219.189.209:42708
+Bot connection detected, version: 1 from 162.219.189.209:42708
+Bot source: '' from 162.219.189.209:42708
+[Cosmic] Connected | IP Address: 162.219.189.209:42708 (source: )
+[1;37m[Cosmic] [0;32mConnected [1;37m| IP Address:[0;32m 162.219.189.209:42708 ()
+Received 4 bytes: 00000001 from 37.150.61.194:50863
+Bot connection detected, version: 1 from 37.150.61.194:50863
+Received 4 bytes: 00000001 from 179.87.65.110:36976
+Bot connection detected, version: 1 from 179.87.65.110:36976
+Bot source: 'payload' from 37.150.61.194:50863
+[Cosmic] Connected | IP Address: 37.150.61.194:50863 (source: payload)
+[1;37m[Cosmic] [0;32mConnected [1;37m| IP Address:[0;32m 37.150.61.194:50863 (payload)
+Bot source: '' from 179.87.65.110:36976
+[Cosmic] Connected | IP Address: 179.87.65.110:36976 (source: )
+[1;37m[Cosmic] [0;32mConnected [1;37m| IP Address:[0;32m 179.87.65.110:36976 ()
+Received 4 bytes: 00000001 from 74.207.224.213:55814
+Bot connection detected, version: 1 from 74.207.224.213:55814
+Received 4 bytes: 00000001 from 220.134.4.78:46258
+Bot connection detected, version: 1 from 220.134.4.78:46258
+Received 4 bytes: 00000001 from 5.27.229.224:34622
+Bot connection detected, version: 1 from 5.27.229.224:34622
+Bot source: '' from 5.27.229.224:34622
+[Cosmic] Connected | IP Address: 5.27.229.224:34622 (source: )
+[1;37m[Cosmic] [0;32mConnected [1;37m| IP Address:[0;32m 5.27.229.224:34622 ()

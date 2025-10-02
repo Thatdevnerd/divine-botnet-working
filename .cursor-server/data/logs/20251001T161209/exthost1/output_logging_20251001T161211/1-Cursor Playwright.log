@@ -5,3 +5,9 @@
 [2025-10-01T20:12:13.033Z] [INFO] [general] Cursor Playwright MCP Provider registered successfully
 [2025-10-01T20:12:13.510Z] [INFO] [general] Calling listOfferings on MCP Client
 [2025-10-01T20:12:13.510Z] [INFO] [general] Calling listOfferings on MCP Client
+[2025-10-01T21:20:35.254Z] [INFO] [general] Deactivating Cursor Playwright MCP Provider
+[2025-10-01T21:20:35.295Z] [INFO] [general] Client Transport closed
+[2025-10-01T21:20:35.295Z] [INFO] [general] Client Transport closed
+[2025-10-01T21:20:35.295Z] [INFO] [general] Server Transport closed
+[2025-10-01T21:20:35.295Z] [INFO] [general] MCP Channel closed
+[2025-10-01T21:20:35.295Z] [INFO] [general] Playwright MCP Provider disposed

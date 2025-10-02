@@ -1,0 +1,23 @@
+2025-10-02 07:10:47.219 [info] Extension host with pid 21309 started
+2025-10-02 07:10:47.231 [info] Lock '/root/.cursor-server/data/User/workspaceStorage/9440688718ec35d7bade6f226e3bee53/vscode.lock': Lock acquired.
+2025-10-02 07:10:47.340 [info] ExtensionService#_doActivateExtension cursor.cursor-browser-automation, startup: false, activationEvent: 'onCommand:cursor.browserAutomation.stop'
+2025-10-02 07:10:47.341 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2025-10-02 07:10:47.342 [info] ExtensionService#_doActivateExtension vscode.tunnel-forwarding, startup: false, activationEvent: 'onTunnel'
+2025-10-02 07:10:47.342 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-10-02 07:10:47.342 [info] ExtensionService#_doActivateExtension anysphere.cursor-browser-connect, startup: false, activationEvent: 'onStartupFinished'
+2025-10-02 07:10:47.342 [info] ExtensionService#_doActivateExtension anysphere.cursor-mcp, startup: false, activationEvent: 'onStartupFinished'
+2025-10-02 07:10:47.342 [info] ExtensionService#_doActivateExtension anysphere.cursor-playwright, startup: false, activationEvent: 'onStartupFinished'
+2025-10-02 07:10:47.342 [info] ExtensionService#_doActivateExtension anysphere.cursor-shadow-workspace, startup: false, activationEvent: 'onStartupFinished'
+2025-10-02 07:10:47.343 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-10-02 07:10:47.343 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-10-02 07:10:48.550 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2025-10-02 07:10:48.550 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2025-10-02 07:10:48.700 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2025-10-02 07:10:48.701 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2025-10-02 07:10:48.937 [info] ExtensionService#_doActivateExtension anysphere.cursor-retrieval, startup: false, activationEvent: 'onStartupFinished'
+2025-10-02 07:10:49.160 [info] Eager extensions activated
+2025-10-02 07:12:06.444 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2025-10-02 07:17:16.684 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2025-10-02 07:17:21.947 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-10-02 07:17:21.948 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2025-10-02 08:35:11.775 [info] [ExtHostShellExec] Session bcf06a2e-ceb4-4027-86f0-9ec380c8a12f: Dropped 10760 stdout bytes, 0 stderr bytes (scrollback limit reached)

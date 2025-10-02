@@ -1,0 +1,7 @@
+[2025-10-02T11:10:48.675Z] [INFO] [general] Activating Cursor Playwright MCP Provider
+[2025-10-02T11:10:48.676Z] [INFO] [general] Initializing Playwright MCP Server
+[2025-10-02T11:10:48.820Z] [INFO] [general] Playwright MCP Server and Client initialized successfully
+[2025-10-02T11:10:48.820Z] [INFO] [general] Playwright MCP Provider initialized successfully
+[2025-10-02T11:10:48.820Z] [INFO] [general] Cursor Playwright MCP Provider registered successfully
+[2025-10-02T11:10:49.161Z] [INFO] [general] Calling listOfferings on MCP Client
+[2025-10-02T11:10:49.162Z] [INFO] [general] Calling listOfferings on MCP Client
